@@ -18,6 +18,8 @@
 		8498173A1C64E21F000873AB /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849817391C64E21F000873AB /* Address.swift */; };
 		8498173C1C64E3EF000873AB /* PaymentDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498173B1C64E3EF000873AB /* PaymentDetails.swift */; };
 		8498173E1C64E4F4000873AB /* LineItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498173D1C64E4F4000873AB /* LineItem.swift */; };
+		84A6D02F1C65145A0088319B /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6D02E1C65145A0088319B /* ObjectMapper.framework */; };
+		84A6D0311C6514760088319B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6D0301C6514760088319B /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		849817391C64E21F000873AB /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		8498173B1C64E3EF000873AB /* PaymentDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentDetails.swift; sourceTree = "<group>"; };
 		8498173D1C64E4F4000873AB /* LineItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineItem.swift; sourceTree = "<group>"; };
+		84A6D02E1C65145A0088319B /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = ../Carthage/Checkouts/ObjectMapper/build/Debug/ObjectMapper.framework; sourceTree = "<group>"; };
+		84A6D0301C6514760088319B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Carthage/Checkouts/Alamofire/build/Debug/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A6D0311C6514760088319B /* Alamofire.framework in Frameworks */,
+				84A6D02F1C65145A0088319B /* ObjectMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +120,8 @@
 			children = (
 				8402B3211C64784900E33381 /* Info.plist */,
 				8402B31F1C64784900E33381 /* WooCommerceSDK.h */,
+				84A6D0301C6514760088319B /* Alamofire.framework */,
+				84A6D02E1C65145A0088319B /* ObjectMapper.framework */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
