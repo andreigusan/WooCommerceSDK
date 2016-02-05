@@ -26,7 +26,7 @@ public struct Order: Mappable {
     var customerUserAgent: String?
     var customerId: Int?
     var viewOrderUrl: NSURL?
-    var lineItems: String?
+    var lineItems: [LineItem]?
     var shippingLines: String?
     var taxLines: String?
     var feeLines: String?
