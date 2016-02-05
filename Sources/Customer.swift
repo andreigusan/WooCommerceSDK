@@ -15,8 +15,8 @@ public struct Customer: Mappable {
     var ordersCount: Int?
     var totalSpent: Int?
     var avatarUrl: NSURL?
-    var billingAddress: String?
-    var shippingAddress: String?
+    var billingAddress: Address?
+    var shippingAddress: Address?
 
     public init?(_ map: Map) {}
 

@@ -20,8 +20,8 @@ public struct Order: Mappable {
     var totalDiscount: Float?
     var shippingMethods: String?
     var paymentDetails: String?
-    var billingAddress: String?
-    var shippingAddress: String?
+    var billingAddress: Address?
+    var shippingAddress: Address?
     var note: String?
     var customerIp: String?
     var customerUserAgent: String?
