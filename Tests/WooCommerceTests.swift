@@ -16,6 +16,17 @@ class WooCommerceTests: XCTestCase {
         client.consumerSecret = processInfo.environment["WOOCOMMERCE_CONSUMER_SECRET"]
     }
 
+    func testGetCustomer() {
+        let expectation: XCTestExpectation = self.expectationWithDescription("testGetCustomer")
+        Customer.get(2) { success, customer in
+            if success == true {
+                XCTAssertNotNil(customer, "Customer object should not be nil.")
+            }
+            expectation.fulfill()
+        }
+        self.waitForExpectationsWithTimeout(requestTimeout, handler: nil)
+    }
+
     func testGetOrder() {
         let expectation: XCTestExpectation = self.expectationWithDescription("testGetOrder")
         Order.get(12) { success, order in
