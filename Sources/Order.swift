@@ -26,7 +26,7 @@ public struct Order: Mappable {
     var customerIp: String?
     var customerUserAgent: String?
     var customerId: Int?
-    var viewOrderUrl: String?
+    var viewOrderUrl: NSURL?
     var lineItems: String?
     var shippingLines: String?
     var taxLines: String?
@@ -60,7 +60,7 @@ public struct Order: Mappable {
         customerIp <- map["customer_ip"]
         customerUserAgent <- map["customer_user_agent"]
         customerId <- map["customer_id"]
-        viewOrderUrl <- map["view_order_url"]
+        viewOrderUrl <- (map["view_order_url"], URLTransform())
         lineItems <- map["line_items"]
         shippingLines <- map["shipping_lines"]
         lineItems <- map["line_items"]

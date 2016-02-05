@@ -11,7 +11,7 @@ public struct Product: Mappable {
     var status: String?
     var downloadable: Bool?
     var virtual: Bool?
-    var permalink: String?
+    var permalink: NSURL?
     var sku: String?
     var price: String?
     var regularPrice: String?
@@ -65,7 +65,7 @@ public struct Product: Mappable {
     var totalSales: Int?
     var variations: String?
     var parent: String?
-    var productUrl: String?
+    var productUrl: NSURL?
     var buttonText: String?
     var menuOrder: Int?
 
@@ -80,7 +80,7 @@ public struct Product: Mappable {
         status <- map["status"]
         downloadable <- map["downloadable"]
         virtual <- map["virtual"]
-        permalink <- map["permalink"]
+        permalink <- (map["permalink"], URLTransform())
         sku <- map["sku"]
         price <- map["price"]
         regularPrice <- map["regular_price"]
@@ -134,7 +134,7 @@ public struct Product: Mappable {
         totalSales <- map["total_sales"]
         variations <- map["variations"]
         parent <- map["parent"]
-        productUrl <- map["product_url"]
+        productUrl <- (map["product_url"], URLTransform())
         buttonText <- map["button_text"]
         menuOrder <- map["menu_order"]
     }

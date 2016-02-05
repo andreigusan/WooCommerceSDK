@@ -14,7 +14,7 @@ public struct Customer: Mappable {
     var lastOrderDate: NSDate?
     var ordersCount: Int?
     var totalSpent: Int?
-    var avatarUrl: String?
+    var avatarUrl: NSURL?
     var billingAddress: String?
     var shippingAddress: String?
 
@@ -32,7 +32,7 @@ public struct Customer: Mappable {
         lastOrderDate <- (map["last_order_date"], ISO8601DateTransform())
         ordersCount <- map["orders_count"]
         totalSpent <- map["total_spent"]
-        avatarUrl <- map["avatar_url"]
+        avatarUrl <- (map["avatar_url"], URLTransform())
         billingAddress <- map["billing_address"]
         shippingAddress <- map["shipping_address"]
     }
