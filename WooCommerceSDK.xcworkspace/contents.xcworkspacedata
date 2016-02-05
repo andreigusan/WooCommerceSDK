@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:WooCommerce.xcodeproj">
+      location = "group:WooCommerceSDK.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Carthage/Checkouts/Alamofire/Alamofire.xcodeproj">

@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8402B3201C64784900E33381 /* WooCommerce.h in Headers */ = {isa = PBXBuildFile; fileRef = 8402B31F1C64784900E33381 /* WooCommerce.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8402B3271C64784900E33381 /* WooCommerce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8402B31C1C64784900E33381 /* WooCommerce.framework */; };
-		8402B32C1C64784900E33381 /* WooCommerceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8402B32B1C64784900E33381 /* WooCommerceTests.swift */; };
+		8402B3201C64784900E33381 /* WooCommerceSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 8402B31F1C64784900E33381 /* WooCommerceSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8402B3271C64784900E33381 /* WooCommerceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8402B31C1C64784900E33381 /* WooCommerceSDK.framework */; };
+		8402B32C1C64784900E33381 /* WooCommerceSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8402B32B1C64784900E33381 /* WooCommerceSDKTests.swift */; };
 		8402B3381C64797E00E33381 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8402B3371C64797E00E33381 /* Order.swift */; };
 		8402B33A1C6481AD00E33381 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8402B3391C6481AD00E33381 /* Client.swift */; };
 		849817341C64B8A9000873AB /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849817331C64B8A9000873AB /* Product.swift */; };
@@ -26,16 +26,16 @@
 			containerPortal = 8402B3131C64784900E33381 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8402B31B1C64784900E33381;
-			remoteInfo = WooCommerce;
+			remoteInfo = WooCommerceSDK;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8402B31C1C64784900E33381 /* WooCommerce.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WooCommerce.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8402B31F1C64784900E33381 /* WooCommerce.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WooCommerce.h; sourceTree = "<group>"; };
+		8402B31C1C64784900E33381 /* WooCommerceSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WooCommerceSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8402B31F1C64784900E33381 /* WooCommerceSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WooCommerceSDK.h; sourceTree = "<group>"; };
 		8402B3211C64784900E33381 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8402B3261C64784900E33381 /* WooCommerceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WooCommerceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8402B32B1C64784900E33381 /* WooCommerceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WooCommerceTests.swift; sourceTree = "<group>"; };
+		8402B3261C64784900E33381 /* WooCommerceSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WooCommerceSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8402B32B1C64784900E33381 /* WooCommerceSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WooCommerceSDKTests.swift; sourceTree = "<group>"; };
 		8402B32D1C64784900E33381 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8402B3371C64797E00E33381 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		8402B3391C6481AD00E33381 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8402B3271C64784900E33381 /* WooCommerce.framework in Frameworks */,
+				8402B3271C64784900E33381 /* WooCommerceSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,8 +78,8 @@
 		8402B31D1C64784900E33381 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8402B31C1C64784900E33381 /* WooCommerce.framework */,
-				8402B3261C64784900E33381 /* WooCommerceTests.xctest */,
+				8402B31C1C64784900E33381 /* WooCommerceSDK.framework */,
+				8402B3261C64784900E33381 /* WooCommerceSDKTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,7 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				8402B32D1C64784900E33381 /* Info.plist */,
-				8402B32B1C64784900E33381 /* WooCommerceTests.swift */,
+				8402B32B1C64784900E33381 /* WooCommerceSDKTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -113,7 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				8402B3211C64784900E33381 /* Info.plist */,
-				8402B31F1C64784900E33381 /* WooCommerce.h */,
+				8402B31F1C64784900E33381 /* WooCommerceSDK.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -125,16 +125,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8402B3201C64784900E33381 /* WooCommerce.h in Headers */,
+				8402B3201C64784900E33381 /* WooCommerceSDK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		8402B31B1C64784900E33381 /* WooCommerce */ = {
+		8402B31B1C64784900E33381 /* WooCommerceSDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8402B3301C64784900E33381 /* Build configuration list for PBXNativeTarget "WooCommerce" */;
+			buildConfigurationList = 8402B3301C64784900E33381 /* Build configuration list for PBXNativeTarget "WooCommerceSDK" */;
 			buildPhases = (
 				8402B3171C64784900E33381 /* Sources */,
 				8402B3181C64784900E33381 /* Frameworks */,
@@ -145,14 +145,14 @@
 			);
 			dependencies = (
 			);
-			name = WooCommerce;
-			productName = WooCommerce;
-			productReference = 8402B31C1C64784900E33381 /* WooCommerce.framework */;
+			name = WooCommerceSDK;
+			productName = WooCommerceSDK;
+			productReference = 8402B31C1C64784900E33381 /* WooCommerceSDK.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		8402B3251C64784900E33381 /* WooCommerceTests */ = {
+		8402B3251C64784900E33381 /* WooCommerceSDKTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8402B3331C64784900E33381 /* Build configuration list for PBXNativeTarget "WooCommerceTests" */;
+			buildConfigurationList = 8402B3331C64784900E33381 /* Build configuration list for PBXNativeTarget "WooCommerceSDKTests" */;
 			buildPhases = (
 				8402B3221C64784900E33381 /* Sources */,
 				8402B3231C64784900E33381 /* Frameworks */,
@@ -163,9 +163,9 @@
 			dependencies = (
 				8402B3291C64784900E33381 /* PBXTargetDependency */,
 			);
-			name = WooCommerceTests;
-			productName = WooCommerceTests;
-			productReference = 8402B3261C64784900E33381 /* WooCommerceTests.xctest */;
+			name = WooCommerceSDKTests;
+			productName = WooCommerceSDKTests;
+			productReference = 8402B3261C64784900E33381 /* WooCommerceSDKTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -185,7 +185,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8402B3161C64784900E33381 /* Build configuration list for PBXProject "WooCommerce" */;
+			buildConfigurationList = 8402B3161C64784900E33381 /* Build configuration list for PBXProject "WooCommerceSDK" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -197,8 +197,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8402B31B1C64784900E33381 /* WooCommerce */,
-				8402B3251C64784900E33381 /* WooCommerceTests */,
+				8402B31B1C64784900E33381 /* WooCommerceSDK */,
+				8402B3251C64784900E33381 /* WooCommerceSDKTests */,
 			);
 		};
 /* End PBXProject section */
@@ -240,7 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8402B32C1C64784900E33381 /* WooCommerceTests.swift in Sources */,
+				8402B32C1C64784900E33381 /* WooCommerceSDKTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +249,7 @@
 /* Begin PBXTargetDependency section */
 		8402B3291C64784900E33381 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8402B31B1C64784900E33381 /* WooCommerce */;
+			target = 8402B31B1C64784900E33381 /* WooCommerceSDK */;
 			targetProxy = 8402B3281C64784900E33381 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -352,7 +352,7 @@
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = im.thi.WooCommerce;
+				PRODUCT_BUNDLE_IDENTIFIER = im.thi.WooCommerceSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -372,7 +372,7 @@
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = im.thi.WooCommerce;
+				PRODUCT_BUNDLE_IDENTIFIER = im.thi.WooCommerceSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -384,7 +384,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = im.thi.WooCommerceTests;
+				PRODUCT_BUNDLE_IDENTIFIER = im.thi.WooCommerceSDKTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -395,7 +395,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = im.thi.WooCommerceTests;
+				PRODUCT_BUNDLE_IDENTIFIER = im.thi.WooCommerceSDKTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -403,7 +403,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8402B3161C64784900E33381 /* Build configuration list for PBXProject "WooCommerce" */ = {
+		8402B3161C64784900E33381 /* Build configuration list for PBXProject "WooCommerceSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8402B32E1C64784900E33381 /* Debug */,
@@ -412,7 +412,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8402B3301C64784900E33381 /* Build configuration list for PBXNativeTarget "WooCommerce" */ = {
+		8402B3301C64784900E33381 /* Build configuration list for PBXNativeTarget "WooCommerceSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8402B3311C64784900E33381 /* Debug */,
@@ -421,7 +421,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8402B3331C64784900E33381 /* Build configuration list for PBXNativeTarget "WooCommerceTests" */ = {
+		8402B3331C64784900E33381 /* Build configuration list for PBXNativeTarget "WooCommerceSDKTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8402B3341C64784900E33381 /* Debug */,
