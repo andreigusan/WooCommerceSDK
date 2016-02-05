@@ -32,7 +32,7 @@ public struct Order: Mappable {
     var taxLines: String?
     var feeLines: String?
     var couponLines: String?
-    var customer: String?
+    var customer: Customer?
 
     public init?(_ map: Map) {}
 
