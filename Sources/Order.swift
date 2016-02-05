@@ -10,14 +10,14 @@ public struct Order: Mappable {
     var completedAt: NSDate?
     var status: String?
     var currency: String?
-    var total: String?
-    var subtotal: String?
+    var total: Float?
+    var subtotal: Float?
     var totalLineItemQuantity: Int?
-    var totalTax: String?
-    var totalShipping: String?
-    var cartTax: String?
-    var shippingTax: String?
-    var totalDiscount: String?
+    var totalTax: Float?
+    var totalShipping: Float?
+    var cartTax: Float?
+    var shippingTax: Float?
+    var totalDiscount: Float?
     var shippingMethods: String?
     var paymentDetails: String?
     var billingAddress: String?
@@ -44,14 +44,14 @@ public struct Order: Mappable {
         completedAt <- (map["completed_at"], ISO8601DateTransform())
         status <- map["status"]
         currency <- map["currency"]
-        total <- map["total"]
-        subtotal <- map["subtotal"]
+        total <- (map["total"], FloatTransform())
+        subtotal <- (map["subtotal"], FloatTransform())
         totalLineItemQuantity <- map["total_line_items_quantity"]
-        totalTax <- map["total_tax"]
-        totalShipping <- map["total_shipping"]
-        cartTax <- map["cart_tax"]
-        shippingTax <- map["shipping_tax"]
-        totalDiscount <- map["total_discount"]
+        totalTax <- (map["total_tax"], FloatTransform())
+        totalShipping <- (map["total_shipping"], FloatTransform())
+        cartTax <- (map["cart_tax"], FloatTransform())
+        shippingTax <- (map["shipping_tax"], FloatTransform())
+        totalDiscount <- (map["total_discount"], FloatTransform())
         shippingMethods <- map["shipping_methods"]
         paymentDetails <- map["payment_details"]
         billingAddress <- map["billing_address"]

@@ -14,6 +14,7 @@
 		8402B33A1C6481AD00E33381 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8402B3391C6481AD00E33381 /* Client.swift */; };
 		849817341C64B8A9000873AB /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849817331C64B8A9000873AB /* Product.swift */; };
 		849817361C64CE5A000873AB /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849817351C64CE5A000873AB /* Customer.swift */; };
+		849817381C64DA5F000873AB /* FloatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849817371C64DA5F000873AB /* FloatTransform.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		8402B3391C6481AD00E33381 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		849817331C64B8A9000873AB /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		849817351C64CE5A000873AB /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		849817371C64DA5F000873AB /* FloatTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatTransform.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				8402B3371C64797E00E33381 /* Order.swift */,
 				849817331C64B8A9000873AB /* Product.swift */,
 				849817351C64CE5A000873AB /* Customer.swift */,
+				849817371C64DA5F000873AB /* FloatTransform.swift */,
 				84AAAD7E1C649DC00056220E /* Supporting Files */,
 			);
 			path = Sources;
@@ -214,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8402B33A1C6481AD00E33381 /* Client.swift in Sources */,
+				849817381C64DA5F000873AB /* FloatTransform.swift in Sources */,
 				8402B3381C64797E00E33381 /* Order.swift in Sources */,
 				849817341C64B8A9000873AB /* Product.swift in Sources */,
 				849817361C64CE5A000873AB /* Customer.swift in Sources */,
