@@ -1,6 +1,8 @@
 import XCTest
 @testable import WooCommerce
 
+let requestTimeout = 30.0
+
 class WooCommerceTests: XCTestCase {
     
     override func setUp() {
@@ -15,11 +17,22 @@ class WooCommerceTests: XCTestCase {
     }
 
     func testGetOrder() {
-        let expectation: XCTestExpectation = self.expectationWithDescription("Order Test")
-        Order.get(10) { (success: Bool, order: Order?) -> Void in
-            XCTAssertEqual(order?.id, 10)
+        let expectation: XCTestExpectation = self.expectationWithDescription("testGetOrder")
+        Order.get(12) { success, order in
+            XCTAssertEqual(order?.id, 12)
             expectation.fulfill()
         }
-        self.waitForExpectationsWithTimeout(30, handler: nil)
+        self.waitForExpectationsWithTimeout(requestTimeout, handler: nil)
+    }
+
+    func testGetProduct() {
+        let expectation: XCTestExpectation = self.expectationWithDescription("testGetProduct")
+        Product.get(8) { success, product in
+            if success == true {
+                XCTAssertNotNil(product, "Product object should not be nil.")
+            }
+            expectation.fulfill()
+        }
+        self.waitForExpectationsWithTimeout(requestTimeout, handler: nil)
     }
 }
