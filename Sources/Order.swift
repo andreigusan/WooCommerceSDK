@@ -55,7 +55,7 @@ public struct Order: Mappable {
         shippingMethods <- map["shipping_methods"]
         paymentDetails <- map["payment_details"]
         billingAddress <- map["billing_address"]
-        id <- map["shipping_address"]
+        shippingAddress <- map["shipping_address"]
         note <- map["note"]
         customerIp <- map["customer_ip"]
         customerUserAgent <- map["customer_user_agent"]
