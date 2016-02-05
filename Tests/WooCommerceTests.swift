@@ -21,6 +21,7 @@ class WooCommerceTests: XCTestCase {
         Customer.get(2) { success, customer in
             if success == true {
                 XCTAssertNotNil(customer, "Customer object should not be nil.")
+                XCTAssertEqual(customer?.id, 2, "Returned customer id should be matched.")
             }
             expectation.fulfill()
         }
@@ -30,7 +31,10 @@ class WooCommerceTests: XCTestCase {
     func testGetOrder() {
         let expectation: XCTestExpectation = self.expectationWithDescription("testGetOrder")
         Order.get(12) { success, order in
-            XCTAssertEqual(order?.id, 12)
+            if success == true {
+                XCTAssertNotNil(order, "Order object should not be nil.")
+                XCTAssertEqual(order?.id, 12, "Returned order id should be matched.")
+            }
             expectation.fulfill()
         }
         self.waitForExpectationsWithTimeout(requestTimeout, handler: nil)
@@ -41,6 +45,7 @@ class WooCommerceTests: XCTestCase {
         Product.get(8) { success, product in
             if success == true {
                 XCTAssertNotNil(product, "Product object should not be nil.")
+                XCTAssertEqual(product?.id, 8, "Returned product id should be matched.")
             }
             expectation.fulfill()
         }

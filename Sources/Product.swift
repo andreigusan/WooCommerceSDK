@@ -141,19 +141,6 @@ public struct Product: Mappable {
 
     public static func get(id: Int, completion: (success: Bool, product: Product?) -> Void) {
         let client = Client.sharedClient
-        let baseURL = NSURL(string: client.siteURL!)
-        let requestURL = NSURL(string: "wc-api/v3/products/\(id)", relativeToURL: baseURL)
-        let requestURLString = requestURL!.absoluteString
-
-        Alamofire.request(.GET, requestURLString)
-            .authenticate(user: client.consumerKey!, password: client.consumerSecret!)
-            .responseJSON { response in
-                if response.result.isSuccess {
-                    let product = Mapper<Product>().map(response.result.value!["product"])
-                    completion(success: true, product: product)
-                } else {
-                    completion(success: false, product: nil)
-                }
-        }
+        client.get("product", id: id, completion: completion)
     }
 }
