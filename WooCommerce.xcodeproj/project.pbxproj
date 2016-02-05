@@ -16,6 +16,7 @@
 		849817361C64CE5A000873AB /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849817351C64CE5A000873AB /* Customer.swift */; };
 		849817381C64DA5F000873AB /* FloatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849817371C64DA5F000873AB /* FloatTransform.swift */; };
 		8498173A1C64E21F000873AB /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849817391C64E21F000873AB /* Address.swift */; };
+		8498173C1C64E3EF000873AB /* PaymentDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498173B1C64E3EF000873AB /* PaymentDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		849817351C64CE5A000873AB /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		849817371C64DA5F000873AB /* FloatTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatTransform.swift; sourceTree = "<group>"; };
 		849817391C64E21F000873AB /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		8498173B1C64E3EF000873AB /* PaymentDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				849817331C64B8A9000873AB /* Product.swift */,
 				849817351C64CE5A000873AB /* Customer.swift */,
 				849817391C64E21F000873AB /* Address.swift */,
+				8498173B1C64E3EF000873AB /* PaymentDetails.swift */,
 				849817371C64DA5F000873AB /* FloatTransform.swift */,
 				84AAAD7E1C649DC00056220E /* Supporting Files */,
 			);
@@ -225,6 +228,7 @@
 				8402B3381C64797E00E33381 /* Order.swift in Sources */,
 				849817341C64B8A9000873AB /* Product.swift in Sources */,
 				849817361C64CE5A000873AB /* Customer.swift in Sources */,
+				8498173C1C64E3EF000873AB /* PaymentDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
