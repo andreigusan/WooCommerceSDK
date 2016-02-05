@@ -8,4 +8,4 @@ install:
   - carthage bootstrap --use-submodules --no-build
 
 script:
-  - xctool test -workspace WooCommerceSDK.xcworkspace -scheme WooCommerceSDK
+  - xcodebuild test -workspace WooCommerceSDK.xcworkspace -scheme WooCommerceSDK | xcpretty -c
