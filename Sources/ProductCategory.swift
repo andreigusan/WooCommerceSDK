@@ -13,6 +13,8 @@ public struct ProductCategory: Mappable {
 
     public init?(_ map: Map) {}
 
+    public init() {}
+
     mutating public func mapping(map: Map) {
         id <- map["id"]
         name <- map["name"]
