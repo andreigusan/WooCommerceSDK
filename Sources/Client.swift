@@ -22,8 +22,13 @@ public class Client {
         let requestURL = NSURL(string: "wc-api/v3/\(type)s/\(id)", relativeToURL: baseURL)
         let requestURLString = requestURL!.absoluteString
 
+        guard let user = consumerKey, password = consumerSecret else {
+            completion(success: false, value: nil)
+            return
+        }
+
         Alamofire.request(.GET, requestURLString)
-            .authenticate(user: consumerKey!, password: consumerSecret!)
+            .authenticate(user: user, password: password)
             .responseJSON { response in
                 if response.result.isSuccess {
                     let object = Mapper<T>().map(response.result.value![type])
