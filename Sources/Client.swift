@@ -39,14 +39,14 @@ public class Client {
         }
     }
 
-    public func getArray<T: Mappable>(type: RequestType, slug: String, completion: (success: Bool, value: [T]?) -> Void) {
+    public func getArray<T: Mappable>(type: RequestType, slug: String, limit: Int = 10, completion: (success: Bool, value: [T]?) -> Void) {
         guard let url = siteURL, user = consumerKey, password = consumerSecret else {
             completion(success: false, value: nil)
             return
         }
 
         let baseURL = NSURL(string: url)
-        let requestURL = NSURL(string: "wc-api/v3/\(slug)", relativeToURL: baseURL)
+        let requestURL = NSURL(string: "wc-api/v3/\(slug)?filter[limit]=\(limit)", relativeToURL: baseURL)
         let requestURLString = requestURL!.absoluteString
 
         Alamofire.request(.GET, requestURLString)
