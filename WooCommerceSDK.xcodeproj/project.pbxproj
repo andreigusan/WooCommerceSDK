@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84948D1D1C661CA100C40DA4 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84948D1C1C661CA100C40DA4 /* RequestType.swift */; };
+		84948D1E1C661CA100C40DA4 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84948D1C1C661CA100C40DA4 /* RequestType.swift */; };
+		84948D1F1C661CA100C40DA4 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84948D1C1C661CA100C40DA4 /* RequestType.swift */; };
+		84948D201C661CA100C40DA4 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84948D1C1C661CA100C40DA4 /* RequestType.swift */; };
 		84A6D0D51C65C82B0088319B /* WooCommerceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6D0CB1C65C82A0088319B /* WooCommerceSDK.framework */; };
 		84A6D0F11C65C8920088319B /* WooCommerceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6D0E71C65C8920088319B /* WooCommerceSDK.framework */; };
 		84A6D10D1C65C8A40088319B /* WooCommerceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6D1031C65C8A40088319B /* WooCommerceSDK.framework */; };
@@ -90,6 +94,7 @@
 		8402B32D1C64784900E33381 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8402B3371C64797E00E33381 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		8402B3391C6481AD00E33381 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		84948D1C1C661CA100C40DA4 /* RequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
 		849817331C64B8A9000873AB /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		849817351C64CE5A000873AB /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		849817371C64DA5F000873AB /* FloatTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatTransform.swift; sourceTree = "<group>"; };
@@ -237,6 +242,7 @@
 				8498173D1C64E4F4000873AB /* LineItem.swift */,
 				8498173B1C64E3EF000873AB /* PaymentDetails.swift */,
 				849817371C64DA5F000873AB /* FloatTransform.swift */,
+				84948D1C1C661CA100C40DA4 /* RequestType.swift */,
 				84AAAD7E1C649DC00056220E /* Supporting Files */,
 			);
 			path = Sources;
@@ -641,6 +647,7 @@
 				84A6D13C1C65CEE60088319B /* LineItem.swift in Sources */,
 				84A6D13D1C65CEE60088319B /* PaymentDetails.swift in Sources */,
 				84A6D13E1C65CEE60088319B /* FloatTransform.swift in Sources */,
+				84948D1D1C661CA100C40DA4 /* RequestType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -664,6 +671,7 @@
 				84A6D1331C65CEBE0088319B /* LineItem.swift in Sources */,
 				84A6D1341C65CEBE0088319B /* PaymentDetails.swift in Sources */,
 				84A6D1351C65CEBE0088319B /* FloatTransform.swift in Sources */,
+				84948D1E1C661CA100C40DA4 /* RequestType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -687,6 +695,7 @@
 				84A6D1441C65CEEE0088319B /* LineItem.swift in Sources */,
 				84A6D1451C65CEEE0088319B /* PaymentDetails.swift in Sources */,
 				84A6D1461C65CEEE0088319B /* FloatTransform.swift in Sources */,
+				84948D1F1C661CA100C40DA4 /* RequestType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -710,6 +719,7 @@
 				84A6D14C1C65CF040088319B /* LineItem.swift in Sources */,
 				84A6D14D1C65CF040088319B /* PaymentDetails.swift in Sources */,
 				84A6D14E1C65CF040088319B /* FloatTransform.swift in Sources */,
+				84948D201C661CA100C40DA4 /* RequestType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

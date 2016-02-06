@@ -39,7 +39,7 @@ public class Client {
         }
     }
 
-    public func get<T: Mappable>(slug: String, completion: (success: Bool, value: T?) -> Void) {
+    public func getArray<T: Mappable>(type: RequestType, slug: String, completion: (success: Bool, value: [T]?) -> Void) {
         guard let url = siteURL, user = consumerKey, password = consumerSecret else {
             completion(success: false, value: nil)
             return
@@ -53,8 +53,8 @@ public class Client {
             .authenticate(user: user, password: password)
             .responseJSON { response in
                 if response.result.isSuccess {
-                    let object = Mapper<T>().map(response.result.value!)
-                    completion(success: true, value: object)
+                    let objects = Mapper<T>().mapArray(response.result.value![type.rawValue])!
+                    completion(success: true, value: objects)
                 } else {
                     completion(success: false, value: nil)
                 }
