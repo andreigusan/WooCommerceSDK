@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "84A6D11E1C65C8B30088319B"
-               BuildableName = "WooCommerceSDK-watchOS.framework"
+               BuildableName = "WooCommerceSDK.framework"
                BlueprintName = "WooCommerceSDK-watchOS"
                ReferencedContainer = "container:WooCommerceSDK.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "84A6D11E1C65C8B30088319B"
-            BuildableName = "WooCommerceSDK-watchOS.framework"
+            BuildableName = "WooCommerceSDK.framework"
             BlueprintName = "WooCommerceSDK-watchOS"
             ReferencedContainer = "container:WooCommerceSDK.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "84A6D11E1C65C8B30088319B"
-            BuildableName = "WooCommerceSDK-watchOS.framework"
+            BuildableName = "WooCommerceSDK.framework"
             BlueprintName = "WooCommerceSDK-watchOS"
             ReferencedContainer = "container:WooCommerceSDK.xcodeproj">
          </BuildableReference>

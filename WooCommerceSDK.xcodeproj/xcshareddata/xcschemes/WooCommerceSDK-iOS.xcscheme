@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "84A6D0CA1C65C82A0088319B"
-               BuildableName = "WooCommerceSDK-iOS.framework"
+               BuildableName = "WooCommerceSDK.framework"
                BlueprintName = "WooCommerceSDK-iOS"
                ReferencedContainer = "container:WooCommerceSDK.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "84A6D0CA1C65C82A0088319B"
-            BuildableName = "WooCommerceSDK-iOS.framework"
+            BuildableName = "WooCommerceSDK.framework"
             BlueprintName = "WooCommerceSDK-iOS"
             ReferencedContainer = "container:WooCommerceSDK.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "84A6D0CA1C65C82A0088319B"
-            BuildableName = "WooCommerceSDK-iOS.framework"
+            BuildableName = "WooCommerceSDK.framework"
             BlueprintName = "WooCommerceSDK-iOS"
             ReferencedContainer = "container:WooCommerceSDK.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "84A6D0CA1C65C82A0088319B"
-            BuildableName = "WooCommerceSDK-iOS.framework"
+            BuildableName = "WooCommerceSDK.framework"
             BlueprintName = "WooCommerceSDK-iOS"
             ReferencedContainer = "container:WooCommerceSDK.xcodeproj">
          </BuildableReference>
