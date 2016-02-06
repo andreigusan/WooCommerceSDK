@@ -4,3 +4,5 @@
 [submodule "Carthage/Checkouts/ObjectMapper"]
 	url = https://github.com/Hearst-DD/ObjectMapper.git
 	path = Carthage/Checkouts/ObjectMapper
+[submodule "Carthage/Checkouts/xcconfigs"]
+	url = https://github.com/jspahrsummers/xcconfigs.git
