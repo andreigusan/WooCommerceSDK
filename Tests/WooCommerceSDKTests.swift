@@ -28,6 +28,15 @@ class WooCommerceSDKTests: XCTestCase {
 		self.waitForExpectationsWithTimeout(requestTimeout, handler: nil)
 	}
 
+    func testGetCustomerOrders() {
+        let expectation: XCTestExpectation = self.expectationWithDescription("testGetCustomerOrders")
+        Customer.getOrders(2) { (success, orders) -> Void in
+            XCTAssertNotNil(orders)
+            expectation.fulfill()
+        }
+        self.waitForExpectationsWithTimeout(requestTimeout, handler: nil)
+    }
+    
 	func testGetOrder() {
 		let expectation: XCTestExpectation = self.expectationWithDescription("testGetOrder")
 		Order.get(12) { success, order in

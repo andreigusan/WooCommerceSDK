@@ -38,4 +38,26 @@ public class Client {
                 }
         }
     }
+
+    public func get<T: Mappable>(slug: String, completion: (success: Bool, value: T?) -> Void) {
+        guard let url = siteURL, user = consumerKey, password = consumerSecret else {
+            completion(success: false, value: nil)
+            return
+        }
+
+        let baseURL = NSURL(string: url)
+        let requestURL = NSURL(string: "wc-api/v3/\(slug)", relativeToURL: baseURL)
+        let requestURLString = requestURL!.absoluteString
+
+        Alamofire.request(.GET, requestURLString)
+            .authenticate(user: user, password: password)
+            .responseJSON { response in
+                if response.result.isSuccess {
+                    let object = Mapper<T>().map(response.result.value!)
+                    completion(success: true, value: object)
+                } else {
+                    completion(success: false, value: nil)
+                }
+        }
+    }
 }

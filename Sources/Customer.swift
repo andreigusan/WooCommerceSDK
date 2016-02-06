@@ -16,6 +16,7 @@ public struct Customer: Mappable {
     var avatarUrl: NSURL?
     var billingAddress: Address?
     var shippingAddress: Address?
+    var orders: [Order]?
 
     public init?(_ map: Map) {}
 
@@ -34,10 +35,26 @@ public struct Customer: Mappable {
         avatarUrl <- (map["avatar_url"], URLTransform())
         billingAddress <- map["billing_address"]
         shippingAddress <- map["shipping_address"]
+        orders <- map["orders"]
     }
 
     public static func get(id: Int, completion: (success: Bool, customer: Customer?) -> Void) {
         let client = Client.sharedClient
         client.get("customer", id: id, completion: completion)
+    }
+
+    public static func getOrders(customerId: Int, completion: (success: Bool, orders: [Order]?) -> Void) {
+        let client = Client.sharedClient
+        client.get("customers/\(customerId)/orders") { (success: Bool, value: Customer?) -> Void in
+            guard let customer = value else {
+                completion(success: false, orders: nil)
+                return
+            }
+            guard let orders: [Order] = customer.orders else {
+                completion(success: false, orders: nil)
+                return
+            }
+            completion(success: success, orders: orders)
+        }
     }
 }
