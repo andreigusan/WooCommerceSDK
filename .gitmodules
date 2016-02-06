@@ -6,3 +6,4 @@
 	path = Carthage/Checkouts/ObjectMapper
 [submodule "Carthage/Checkouts/xcconfigs"]
 	url = https://github.com/jspahrsummers/xcconfigs.git
+	path = Carthage/Checkouts/xcconfigs
