@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8402B31B1C64784900E33381"
-               BuildableName = "WooCommerceSDK.framework"
-               BlueprintName = "WooCommerceSDK"
+               BlueprintIdentifier = "84A6D0E61C65C8920088319B"
+               BuildableName = "WooCommerceSDK-OSX.framework"
+               BlueprintName = "WooCommerceSDK-OSX"
                ReferencedContainer = "container:WooCommerceSDK.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8402B3251C64784900E33381"
-               BuildableName = "WooCommerceSDKTests.xctest"
-               BlueprintName = "WooCommerceSDKTests"
+               BlueprintIdentifier = "84A6D0EF1C65C8920088319B"
+               BuildableName = "WooCommerceSDK-OSXTests.xctest"
+               BlueprintName = "WooCommerceSDK-OSXTests"
                ReferencedContainer = "container:WooCommerceSDK.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8402B31B1C64784900E33381"
-            BuildableName = "WooCommerceSDK.framework"
-            BlueprintName = "WooCommerceSDK"
+            BlueprintIdentifier = "84A6D0E61C65C8920088319B"
+            BuildableName = "WooCommerceSDK-OSX.framework"
+            BlueprintName = "WooCommerceSDK-OSX"
             ReferencedContainer = "container:WooCommerceSDK.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8402B31B1C64784900E33381"
-            BuildableName = "WooCommerceSDK.framework"
-            BlueprintName = "WooCommerceSDK"
+            BlueprintIdentifier = "84A6D0E61C65C8920088319B"
+            BuildableName = "WooCommerceSDK-OSX.framework"
+            BlueprintName = "WooCommerceSDK-OSX"
             ReferencedContainer = "container:WooCommerceSDK.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,9 +82,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8402B31B1C64784900E33381"
-            BuildableName = "WooCommerceSDK.framework"
-            BlueprintName = "WooCommerceSDK"
+            BlueprintIdentifier = "84A6D0E61C65C8920088319B"
+            BuildableName = "WooCommerceSDK-OSX.framework"
+            BlueprintName = "WooCommerceSDK-OSX"
             ReferencedContainer = "container:WooCommerceSDK.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
