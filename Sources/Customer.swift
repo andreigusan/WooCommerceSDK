@@ -16,7 +16,6 @@ public struct Customer: Mappable {
     var avatarUrl: NSURL?
     var billingAddress: Address?
     var shippingAddress: Address?
-    var orders: [Order]?
 
     public init?(_ map: Map) {}
 
@@ -35,7 +34,6 @@ public struct Customer: Mappable {
         avatarUrl <- (map["avatar_url"], URLTransform())
         billingAddress <- map["billing_address"]
         shippingAddress <- map["shipping_address"]
-        orders <- map["orders"]
     }
 
     public static func get(id: Int, completion: (success: Bool, customer: Customer?) -> Void) {
