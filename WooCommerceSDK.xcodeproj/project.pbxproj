@@ -49,14 +49,14 @@
 		84A6D14C1C65CF040088319B /* LineItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498173D1C64E4F4000873AB /* LineItem.swift */; };
 		84A6D14D1C65CF040088319B /* PaymentDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498173B1C64E3EF000873AB /* PaymentDetails.swift */; };
 		84A6D14E1C65CF040088319B /* FloatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849817371C64DA5F000873AB /* FloatTransform.swift */; };
-		84A6D16A1C65DB2B0088319B /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6D1691C65DB2B0088319B /* ObjectMapper.framework */; };
-		84A6D16C1C65DB300088319B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6D16B1C65DB300088319B /* Alamofire.framework */; };
-		84A6D16E1C65DB360088319B /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6D16D1C65DB360088319B /* ObjectMapper.framework */; };
-		84A6D1701C65DB3A0088319B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6D16F1C65DB3A0088319B /* Alamofire.framework */; };
-		84A6D1721C65DC140088319B /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6D1711C65DC140088319B /* ObjectMapper.framework */; };
-		84A6D1741C65DC190088319B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6D1731C65DC190088319B /* Alamofire.framework */; };
-		84A6D1761C65DC1F0088319B /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6D1751C65DC1F0088319B /* ObjectMapper.framework */; };
-		84A6D1781C65DC220088319B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6D1771C65DC220088319B /* Alamofire.framework */; };
+		84A6D17E1C65E6410088319B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6D17D1C65E6410088319B /* Alamofire.framework */; };
+		84A6D1801C65E64F0088319B /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6D17F1C65E64F0088319B /* ObjectMapper.framework */; };
+		84A6D1831C65E6610088319B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6D1811C65E6610088319B /* Alamofire.framework */; };
+		84A6D1841C65E6610088319B /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6D1821C65E6610088319B /* ObjectMapper.framework */; };
+		84A6D1871C65E6690088319B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6D1851C65E6690088319B /* Alamofire.framework */; };
+		84A6D1881C65E6690088319B /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6D1861C65E6690088319B /* ObjectMapper.framework */; };
+		84A6D18B1C65E6710088319B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6D1891C65E6710088319B /* Alamofire.framework */; };
+		84A6D18C1C65E6710088319B /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6D18A1C65E6710088319B /* ObjectMapper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,14 +128,14 @@
 		84A6D1031C65C8A40088319B /* WooCommerceSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WooCommerceSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A6D10C1C65C8A40088319B /* WooCommerceSDK-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WooCommerceSDK-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A6D11F1C65C8B30088319B /* WooCommerceSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WooCommerceSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		84A6D1691C65DB2B0088319B /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = "../Carthage/Checkouts/ObjectMapper/build/Debug-iphoneos/ObjectMapper.framework"; sourceTree = "<group>"; };
-		84A6D16B1C65DB300088319B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../Carthage/Checkouts/Alamofire/build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
-		84A6D16D1C65DB360088319B /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = ../Carthage/Checkouts/ObjectMapper/build/Debug/ObjectMapper.framework; sourceTree = "<group>"; };
-		84A6D16F1C65DB3A0088319B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Carthage/Checkouts/Alamofire/build/Debug/Alamofire.framework; sourceTree = "<group>"; };
-		84A6D1711C65DC140088319B /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = "../Carthage/Checkouts/ObjectMapper/build/Debug-appletvos/ObjectMapper.framework"; sourceTree = "<group>"; };
-		84A6D1731C65DC190088319B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../Carthage/Checkouts/Alamofire/build/Debug-appletvos/Alamofire.framework"; sourceTree = "<group>"; };
-		84A6D1751C65DC1F0088319B /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = "../Carthage/Checkouts/ObjectMapper/build/Debug-watchos/ObjectMapper.framework"; sourceTree = "<group>"; };
-		84A6D1771C65DC220088319B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../Carthage/Checkouts/Alamofire/build/Debug-watchos/Alamofire.framework"; sourceTree = "<group>"; };
+		84A6D17D1C65E6410088319B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		84A6D17F1C65E64F0088319B /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = ../Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		84A6D1811C65E6610088319B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
+		84A6D1821C65E6610088319B /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = ../Carthage/Build/Mac/ObjectMapper.framework; sourceTree = "<group>"; };
+		84A6D1851C65E6690088319B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Carthage/Build/tvOS/Alamofire.framework; sourceTree = "<group>"; };
+		84A6D1861C65E6690088319B /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = ../Carthage/Build/tvOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		84A6D1891C65E6710088319B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Carthage/Build/watchOS/Alamofire.framework; sourceTree = "<group>"; };
+		84A6D18A1C65E6710088319B /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = ../Carthage/Build/watchOS/ObjectMapper.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,8 +143,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84A6D16C1C65DB300088319B /* Alamofire.framework in Frameworks */,
-				84A6D16A1C65DB2B0088319B /* ObjectMapper.framework in Frameworks */,
+				84A6D17E1C65E6410088319B /* Alamofire.framework in Frameworks */,
+				84A6D1801C65E64F0088319B /* ObjectMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,8 +160,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84A6D1701C65DB3A0088319B /* Alamofire.framework in Frameworks */,
-				84A6D16E1C65DB360088319B /* ObjectMapper.framework in Frameworks */,
+				84A6D1831C65E6610088319B /* Alamofire.framework in Frameworks */,
+				84A6D1841C65E6610088319B /* ObjectMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,8 +177,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84A6D1741C65DC190088319B /* Alamofire.framework in Frameworks */,
-				84A6D1721C65DC140088319B /* ObjectMapper.framework in Frameworks */,
+				84A6D1871C65E6690088319B /* Alamofire.framework in Frameworks */,
+				84A6D1881C65E6690088319B /* ObjectMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,8 +194,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84A6D1781C65DC220088319B /* Alamofire.framework in Frameworks */,
-				84A6D1761C65DC1F0088319B /* ObjectMapper.framework in Frameworks */,
+				84A6D18B1C65E6710088319B /* Alamofire.framework in Frameworks */,
+				84A6D18C1C65E6710088319B /* ObjectMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,14 +345,14 @@
 			children = (
 				8402B3211C64784900E33381 /* Info.plist */,
 				8402B31F1C64784900E33381 /* WooCommerceSDK.h */,
-				84A6D1771C65DC220088319B /* Alamofire.framework */,
-				84A6D1751C65DC1F0088319B /* ObjectMapper.framework */,
-				84A6D1731C65DC190088319B /* Alamofire.framework */,
-				84A6D1711C65DC140088319B /* ObjectMapper.framework */,
-				84A6D16F1C65DB3A0088319B /* Alamofire.framework */,
-				84A6D16D1C65DB360088319B /* ObjectMapper.framework */,
-				84A6D16B1C65DB300088319B /* Alamofire.framework */,
-				84A6D1691C65DB2B0088319B /* ObjectMapper.framework */,
+				84A6D1891C65E6710088319B /* Alamofire.framework */,
+				84A6D18A1C65E6710088319B /* ObjectMapper.framework */,
+				84A6D1851C65E6690088319B /* Alamofire.framework */,
+				84A6D1861C65E6690088319B /* ObjectMapper.framework */,
+				84A6D1811C65E6610088319B /* Alamofire.framework */,
+				84A6D1821C65E6610088319B /* ObjectMapper.framework */,
+				84A6D17F1C65E64F0088319B /* ObjectMapper.framework */,
+				84A6D17D1C65E6410088319B /* Alamofire.framework */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -903,7 +903,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -924,7 +927,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -970,7 +976,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -991,7 +1000,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1041,7 +1053,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1063,7 +1078,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1096,6 +1114,7 @@
 				84A6D0DE1C65C82B0088319B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84A6D0DF1C65C82B0088319B /* Build configuration list for PBXNativeTarget "WooCommerceSDK-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -1104,6 +1123,7 @@
 				84A6D0E11C65C82B0088319B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84A6D0F81C65C8920088319B /* Build configuration list for PBXNativeTarget "WooCommerceSDK-OSX" */ = {
 			isa = XCConfigurationList;
@@ -1112,6 +1132,7 @@
 				84A6D0FA1C65C8920088319B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84A6D0FB1C65C8920088319B /* Build configuration list for PBXNativeTarget "WooCommerceSDK-OSXTests" */ = {
 			isa = XCConfigurationList;
@@ -1120,6 +1141,7 @@
 				84A6D0FD1C65C8920088319B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84A6D1141C65C8A40088319B /* Build configuration list for PBXNativeTarget "WooCommerceSDK-tvOS" */ = {
 			isa = XCConfigurationList;
@@ -1128,6 +1150,7 @@
 				84A6D1161C65C8A40088319B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84A6D1171C65C8A40088319B /* Build configuration list for PBXNativeTarget "WooCommerceSDK-tvOSTests" */ = {
 			isa = XCConfigurationList;
@@ -1136,6 +1159,7 @@
 				84A6D1191C65C8A40088319B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84A6D1241C65C8B30088319B /* Build configuration list for PBXNativeTarget "WooCommerceSDK-watchOS" */ = {
 			isa = XCConfigurationList;
@@ -1144,6 +1168,7 @@
 				84A6D1261C65C8B30088319B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
