@@ -53,6 +53,10 @@
 		84A6D1501C65D3FA0088319B /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6D02E1C65145A0088319B /* ObjectMapper.framework */; };
 		84A6D1511C65D4160088319B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6D0301C6514760088319B /* Alamofire.framework */; };
 		84A6D1521C65D4160088319B /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6D02E1C65145A0088319B /* ObjectMapper.framework */; };
+		84A6D1531C65D72C0088319B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6D0301C6514760088319B /* Alamofire.framework */; };
+		84A6D1541C65D72C0088319B /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6D02E1C65145A0088319B /* ObjectMapper.framework */; };
+		84A6D1551C65D7300088319B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6D0301C6514760088319B /* Alamofire.framework */; };
+		84A6D1561C65D7300088319B /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6D02E1C65145A0088319B /* ObjectMapper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +137,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A6D1531C65D72C0088319B /* Alamofire.framework in Frameworks */,
+				84A6D1541C65D72C0088319B /* ObjectMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +154,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A6D1551C65D7300088319B /* Alamofire.framework in Frameworks */,
+				84A6D1561C65D7300088319B /* ObjectMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -809,6 +817,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
@@ -830,6 +839,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
@@ -881,6 +891,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -901,6 +912,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
