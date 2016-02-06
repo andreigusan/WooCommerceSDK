@@ -234,15 +234,15 @@
 		8402B31E1C64784900E33381 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				849817391C64E21F000873AB /* Address.swift */,
 				8402B3391C6481AD00E33381 /* Client.swift */,
+				849817351C64CE5A000873AB /* Customer.swift */,
+				8498173D1C64E4F4000873AB /* LineItem.swift */,
 				8402B3371C64797E00E33381 /* Order.swift */,
 				849817331C64B8A9000873AB /* Product.swift */,
-				849817351C64CE5A000873AB /* Customer.swift */,
-				849817391C64E21F000873AB /* Address.swift */,
-				8498173D1C64E4F4000873AB /* LineItem.swift */,
 				8498173B1C64E3EF000873AB /* PaymentDetails.swift */,
-				849817371C64DA5F000873AB /* FloatTransform.swift */,
 				84948D1C1C661CA100C40DA4 /* RequestType.swift */,
+				844A87F51C66233700ABD780 /* Transforms */,
 				84AAAD7E1C649DC00056220E /* Supporting Files */,
 			);
 			path = Sources;
@@ -255,6 +255,14 @@
 				8402B32B1C64784900E33381 /* WooCommerceSDKTests.swift */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		844A87F51C66233700ABD780 /* Transforms */ = {
+			isa = PBXGroup;
+			children = (
+				849817371C64DA5F000873AB /* FloatTransform.swift */,
+			);
+			name = Transforms;
 			sourceTree = "<group>";
 		};
 		84A6D0321C65C72A0088319B /* Configuration */ = {
