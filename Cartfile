@@ -1,3 +1,2 @@
 github "Alamofire/Alamofire" ~> 3.1
 github "Hearst-DD/ObjectMapper" ~> 1.1
-github "jspahrsummers/xcconfigs" ~> 0.9
