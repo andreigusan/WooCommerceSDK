@@ -1,4 +1,5 @@
 # WooCommerceSDK
+[![Build Status](https://travis-ci.org/thii/WooCommerceSDK.svg?branch=master)](https://travis-ci.org/thii/WooCommerceSDK)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 A wrapper around [WooCommerce REST API](http://woothemes.github.io/woocommerce-rest-api-docs/) for iOS, OS X, tvOS and watchOS, written purely in Swift.
