@@ -11,7 +11,14 @@
 		844A87F81C66272B00ABD780 /* ProductCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844A87F61C66237B00ABD780 /* ProductCategory.swift */; };
 		844A87F91C66272C00ABD780 /* ProductCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844A87F61C66237B00ABD780 /* ProductCategory.swift */; };
 		844A87FA1C66272D00ABD780 /* ProductCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844A87F61C66237B00ABD780 /* ProductCategory.swift */; };
-		8471458F1C66712500CE1469 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8471458E1C66712500CE1469 /* Alamofire.framework */; };
+		848127581C6D10B000E65F82 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848127561C6D10B000E65F82 /* Alamofire.framework */; };
+		848127591C6D10B000E65F82 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848127571C6D10B000E65F82 /* ObjectMapper.framework */; };
+		8481275D1C6D10BF00E65F82 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8481275B1C6D10BF00E65F82 /* Alamofire.framework */; };
+		8481275E1C6D10BF00E65F82 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8481275C1C6D10BF00E65F82 /* ObjectMapper.framework */; };
+		848127621C6D10D200E65F82 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848127601C6D10D200E65F82 /* Alamofire.framework */; };
+		848127631C6D10D200E65F82 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848127611C6D10D200E65F82 /* ObjectMapper.framework */; };
+		848127671C6D10E900E65F82 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848127651C6D10E900E65F82 /* Alamofire.framework */; };
+		848127681C6D10E900E65F82 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848127661C6D10E900E65F82 /* ObjectMapper.framework */; };
 		84948D1D1C661CA100C40DA4 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84948D1C1C661CA100C40DA4 /* RequestType.swift */; };
 		84948D1E1C661CA100C40DA4 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84948D1C1C661CA100C40DA4 /* RequestType.swift */; };
 		84948D1F1C661CA100C40DA4 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84948D1C1C661CA100C40DA4 /* RequestType.swift */; };
@@ -58,13 +65,6 @@
 		84A6D14C1C65CF040088319B /* LineItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498173D1C64E4F4000873AB /* LineItem.swift */; };
 		84A6D14D1C65CF040088319B /* PaymentDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498173B1C64E3EF000873AB /* PaymentDetails.swift */; };
 		84A6D14E1C65CF040088319B /* FloatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849817371C64DA5F000873AB /* FloatTransform.swift */; };
-		84A6D1801C65E64F0088319B /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6D17F1C65E64F0088319B /* ObjectMapper.framework */; };
-		84A6D1831C65E6610088319B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6D1811C65E6610088319B /* Alamofire.framework */; };
-		84A6D1841C65E6610088319B /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6D1821C65E6610088319B /* ObjectMapper.framework */; };
-		84A6D1871C65E6690088319B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6D1851C65E6690088319B /* Alamofire.framework */; };
-		84A6D1881C65E6690088319B /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6D1861C65E6690088319B /* ObjectMapper.framework */; };
-		84A6D18B1C65E6710088319B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6D1891C65E6710088319B /* Alamofire.framework */; };
-		84A6D18C1C65E6710088319B /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6D18A1C65E6710088319B /* ObjectMapper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,7 +99,14 @@
 		8402B3371C64797E00E33381 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		8402B3391C6481AD00E33381 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		844A87F61C66237B00ABD780 /* ProductCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCategory.swift; sourceTree = "<group>"; };
-		8471458E1C66712500CE1469 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../Library/Developer/Xcode/DerivedData/WooCommerceSDK-conjspjdfnnejqhlgxizistejjkf/Build/Products/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
+		848127561C6D10B000E65F82 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		848127571C6D10B000E65F82 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		8481275B1C6D10BF00E65F82 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
+		8481275C1C6D10BF00E65F82 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/Mac/ObjectMapper.framework; sourceTree = "<group>"; };
+		848127601C6D10D200E65F82 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/tvOS/Alamofire.framework; sourceTree = "<group>"; };
+		848127611C6D10D200E65F82 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/tvOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		848127651C6D10E900E65F82 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/watchOS/Alamofire.framework; sourceTree = "<group>"; };
+		848127661C6D10E900E65F82 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/watchOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		84948D1C1C661CA100C40DA4 /* RequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
 		849817331C64B8A9000873AB /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		849817351C64CE5A000873AB /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
@@ -139,14 +146,6 @@
 		84A6D1031C65C8A40088319B /* WooCommerceSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WooCommerceSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A6D10C1C65C8A40088319B /* WooCommerceSDK-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WooCommerceSDK-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A6D11F1C65C8B30088319B /* WooCommerceSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WooCommerceSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		84A6D17D1C65E6410088319B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		84A6D17F1C65E64F0088319B /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = ../Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
-		84A6D1811C65E6610088319B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
-		84A6D1821C65E6610088319B /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = ../Carthage/Build/Mac/ObjectMapper.framework; sourceTree = "<group>"; };
-		84A6D1851C65E6690088319B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Carthage/Build/tvOS/Alamofire.framework; sourceTree = "<group>"; };
-		84A6D1861C65E6690088319B /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = ../Carthage/Build/tvOS/ObjectMapper.framework; sourceTree = "<group>"; };
-		84A6D1891C65E6710088319B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Carthage/Build/watchOS/Alamofire.framework; sourceTree = "<group>"; };
-		84A6D18A1C65E6710088319B /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = ../Carthage/Build/watchOS/ObjectMapper.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,8 +153,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8471458F1C66712500CE1469 /* Alamofire.framework in Frameworks */,
-				84A6D1801C65E64F0088319B /* ObjectMapper.framework in Frameworks */,
+				848127581C6D10B000E65F82 /* Alamofire.framework in Frameworks */,
+				848127591C6D10B000E65F82 /* ObjectMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,8 +170,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84A6D1831C65E6610088319B /* Alamofire.framework in Frameworks */,
-				84A6D1841C65E6610088319B /* ObjectMapper.framework in Frameworks */,
+				8481275D1C6D10BF00E65F82 /* Alamofire.framework in Frameworks */,
+				8481275E1C6D10BF00E65F82 /* ObjectMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,8 +187,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84A6D1871C65E6690088319B /* Alamofire.framework in Frameworks */,
-				84A6D1881C65E6690088319B /* ObjectMapper.framework in Frameworks */,
+				848127621C6D10D200E65F82 /* Alamofire.framework in Frameworks */,
+				848127631C6D10D200E65F82 /* ObjectMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,8 +204,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84A6D18B1C65E6710088319B /* Alamofire.framework in Frameworks */,
-				84A6D18C1C65E6710088319B /* ObjectMapper.framework in Frameworks */,
+				848127671C6D10E900E65F82 /* Alamofire.framework in Frameworks */,
+				848127681C6D10E900E65F82 /* ObjectMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +215,6 @@
 		8402B3121C64784900E33381 = {
 			isa = PBXGroup;
 			children = (
-				8471458E1C66712500CE1469 /* Alamofire.framework */,
 				8402B31E1C64784900E33381 /* Sources */,
 				8402B32A1C64784900E33381 /* Tests */,
 				84A6D0321C65C72A0088319B /* Configuration */,
@@ -271,6 +269,54 @@
 				849817371C64DA5F000873AB /* FloatTransform.swift */,
 			);
 			name = Transforms;
+			sourceTree = "<group>";
+		};
+		8481275A1C6D10B500E65F82 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				848127561C6D10B000E65F82 /* Alamofire.framework */,
+				848127571C6D10B000E65F82 /* ObjectMapper.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		8481275F1C6D10C500E65F82 /* OSX */ = {
+			isa = PBXGroup;
+			children = (
+				8481275B1C6D10BF00E65F82 /* Alamofire.framework */,
+				8481275C1C6D10BF00E65F82 /* ObjectMapper.framework */,
+			);
+			name = OSX;
+			sourceTree = "<group>";
+		};
+		848127641C6D10D700E65F82 /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				848127601C6D10D200E65F82 /* Alamofire.framework */,
+				848127611C6D10D200E65F82 /* ObjectMapper.framework */,
+			);
+			name = tvOS;
+			sourceTree = "<group>";
+		};
+		848127691C6D10EC00E65F82 /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				848127651C6D10E900E65F82 /* Alamofire.framework */,
+				848127661C6D10E900E65F82 /* ObjectMapper.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+		8481276A1C6D10F800E65F82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				848127691C6D10EC00E65F82 /* watchOS */,
+				848127641C6D10D700E65F82 /* tvOS */,
+				8481275F1C6D10C500E65F82 /* OSX */,
+				8481275A1C6D10B500E65F82 /* iOS */,
+			);
+			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		84A6D0321C65C72A0088319B /* Configuration */ = {
@@ -367,14 +413,7 @@
 			children = (
 				8402B3211C64784900E33381 /* Info.plist */,
 				8402B31F1C64784900E33381 /* WooCommerceSDK.h */,
-				84A6D1891C65E6710088319B /* Alamofire.framework */,
-				84A6D18A1C65E6710088319B /* ObjectMapper.framework */,
-				84A6D1851C65E6690088319B /* Alamofire.framework */,
-				84A6D1861C65E6690088319B /* ObjectMapper.framework */,
-				84A6D1811C65E6610088319B /* Alamofire.framework */,
-				84A6D1821C65E6610088319B /* ObjectMapper.framework */,
-				84A6D17F1C65E64F0088319B /* ObjectMapper.framework */,
-				84A6D17D1C65E6410088319B /* Alamofire.framework */,
+				8481276A1C6D10F800E65F82 /* Frameworks */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
