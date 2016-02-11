@@ -2,9 +2,9 @@ import Foundation
 import ObjectMapper
 
 public struct PaymentDetails: Mappable {
-    var methodId: String?
-    var methodTitle: String?
-    var paid: Bool?
+    public var methodId: String?
+    public var methodTitle: String?
+    public var paid: Bool?
 
     public init?(_ map: Map) {}
 

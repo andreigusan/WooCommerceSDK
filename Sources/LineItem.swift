@@ -2,18 +2,18 @@ import Foundation
 import ObjectMapper
 
 public struct LineItem: Mappable{
-    var id: Int?
-    var subtotal: Float?
-    var subtotalTax: Float?
-    var total: Float?
-    var totalTax: Float?
-    var price: Float?
-    var quantity: Int?
-    var taxClass: String?
-    var name: String?
-    var productId: Int?
-    var sku: String?
-    var meta: [String: String]?
+    public var id: Int?
+    public var subtotal: Float?
+    public var subtotalTax: Float?
+    public var total: Float?
+    public var totalTax: Float?
+    public var price: Float?
+    public var quantity: Int?
+    public var taxClass: String?
+    public var name: String?
+    public var productId: Int?
+    public var sku: String?
+    public var meta: [String: String]?
 
     public init?(_ map: Map) {}
 

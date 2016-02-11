@@ -2,14 +2,14 @@ import Foundation
 import ObjectMapper
 
 public struct ProductCategory: Mappable {
-    var id: Int?
-    var name: String?
-    var slug: String?
-    var parent: Int?
-    var description: String?
-    var display: String?
-    var image: NSURL?
-    var count: Int?
+    public var id: Int?
+    public var name: String?
+    public var slug: String?
+    public var parent: Int?
+    public var description: String?
+    public var display: String?
+    public var image: NSURL?
+    public var count: Int?
 
     public init?(_ map: Map) {}
 

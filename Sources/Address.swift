@@ -2,17 +2,17 @@ import Foundation
 import ObjectMapper
 
 public struct Address: Mappable {
-    var firstName: String?
-    var lastName: String?
-    var company: String?
-    var address1: String?
-    var address2: String?
-    var city: String?
-    var state: String?
-    var postcode: String?
-    var country: String?
-    var email: String?
-    var phone: String?
+    public var firstName: String?
+    public var lastName: String?
+    public var company: String?
+    public var address1: String?
+    public var address2: String?
+    public var city: String?
+    public var state: String?
+    public var postcode: String?
+    public var country: String?
+    public var email: String?
+    public var phone: String?
 
     public init?(_ map: Map) {}
 

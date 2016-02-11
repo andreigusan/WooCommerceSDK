@@ -2,36 +2,36 @@ import Foundation
 import ObjectMapper
 
 public struct Order: Mappable {
-    var id: Int?
-    var orderNumber: Int?
-    var createdAt: NSDate?
-    var updatedAt: NSDate?
-    var completedAt: NSDate?
-    var status: String?
-    var currency: String?
-    var total: Float?
-    var subtotal: Float?
-    var totalLineItemQuantity: Int?
-    var totalTax: Float?
-    var totalShipping: Float?
-    var cartTax: Float?
-    var shippingTax: Float?
-    var totalDiscount: Float?
-    var shippingMethods: String?
-    var paymentDetails: PaymentDetails?
-    var billingAddress: Address?
-    var shippingAddress: Address?
-    var note: String?
-    var customerIp: String?
-    var customerUserAgent: String?
-    var customerId: Int?
-    var viewOrderUrl: NSURL?
-    var lineItems: [LineItem]?
-    var shippingLines: String?
-    var taxLines: String?
-    var feeLines: String?
-    var couponLines: String?
-    var customer: Customer?
+    public var id: Int?
+    public var orderNumber: Int?
+    public var createdAt: NSDate?
+    public var updatedAt: NSDate?
+    public var completedAt: NSDate?
+    public var status: String?
+    public var currency: String?
+    public var total: Float?
+    public var subtotal: Float?
+    public var totalLineItemQuantity: Int?
+    public var totalTax: Float?
+    public var totalShipping: Float?
+    public var cartTax: Float?
+    public var shippingTax: Float?
+    public var totalDiscount: Float?
+    public var shippingMethods: String?
+    public var paymentDetails: PaymentDetails?
+    public var billingAddress: Address?
+    public var shippingAddress: Address?
+    public var note: String?
+    public var customerIp: String?
+    public var customerUserAgent: String?
+    public var customerId: Int?
+    public var viewOrderUrl: NSURL?
+    public var lineItems: [LineItem]?
+    public var shippingLines: String?
+    public var taxLines: String?
+    public var feeLines: String?
+    public var couponLines: String?
+    public var customer: Customer?
 
     public init?(_ map: Map) {}
 

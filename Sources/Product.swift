@@ -2,71 +2,71 @@ import Foundation
 import ObjectMapper
 
 public struct Product: Mappable {
-    var title: String?
-    var id: Int?
-    var createdAt: NSDate?
-    var updatedAt: NSDate?
-    var type: String?
-    var status: String?
-    var downloadable: Bool?
-    var virtual: Bool?
-    var permalink: NSURL?
-    var sku: String?
-    var price: Float?
-    var regularPrice: Float?
-    var salePrice: Float?
-    var salePriceDatesFrom: NSDate?
-    var salePriceDatesTo: NSDate?
-    var priceHtml: String?
-    var taxable: Bool?
-    var taxStatus: String?
-    var taxClass: String?
-    var managingStock: Bool?
-    var stockQuantity: Int?
-    var inStock: Bool?
-    var backordersAllowed: Bool?
-    var backordered: Bool?
-    var backorders: String?
-    var soldIndividually: Bool?
-    var purchaseable: Bool?
-    var featured: Bool?
-    var visible: Bool?
-    var catalogVisibility: String?
-    var onSale: Bool?
-    var weight: String?
-    var dimensions: String?
-    var shippingRequired: Bool?
-    var shippingTaxable: Bool?
-    var shippingClass: String?
-    var shippingClassId: Int?
-    var description: String?
-    var enableHtmlDescription: Bool?
-    var shortDescription: String?
-    var enableHtmlShortDescription: Bool?
-    var reviewsAllowed: Bool?
-    var averageRating: String?
-    var ratingCount: Int?
-    var relatedIds: String?
-    var upsellIds: String?
-    var crossSellIds: String?
-    var parentId: Int?
-    var categories: String?
-    var tags: String?
-    var images: String?
-    var featuredSrc: String?
-    var attributes: String?
-    var defaultAttributes: String?
-    var downloads: String?
-    var downloadLimit: Int?
-    var downloadExpiry: Int?
-    var downloadType: String?
-    var purchaseNote: String?
-    var totalSales: Int?
-    var variations: String?
-    var parent: String?
-    var productUrl: NSURL?
-    var buttonText: String?
-    var menuOrder: Int?
+    public var title: String?
+    public var id: Int?
+    public var createdAt: NSDate?
+    public var updatedAt: NSDate?
+    public var type: String?
+    public var status: String?
+    public var downloadable: Bool?
+    public var virtual: Bool?
+    public var permalink: NSURL?
+    public var sku: String?
+    public var price: Float?
+    public var regularPrice: Float?
+    public var salePrice: Float?
+    public var salePriceDatesFrom: NSDate?
+    public var salePriceDatesTo: NSDate?
+    public var priceHtml: String?
+    public var taxable: Bool?
+    public var taxStatus: String?
+    public var taxClass: String?
+    public var managingStock: Bool?
+    public var stockQuantity: Int?
+    public var inStock: Bool?
+    public var backordersAllowed: Bool?
+    public var backordered: Bool?
+    public var backorders: String?
+    public var soldIndividually: Bool?
+    public var purchaseable: Bool?
+    public var featured: Bool?
+    public var visible: Bool?
+    public var catalogVisibility: String?
+    public var onSale: Bool?
+    public var weight: String?
+    public var dimensions: String?
+    public var shippingRequired: Bool?
+    public var shippingTaxable: Bool?
+    public var shippingClass: String?
+    public var shippingClassId: Int?
+    public var description: String?
+    public var enableHtmlDescription: Bool?
+    public var shortDescription: String?
+    public var enableHtmlShortDescription: Bool?
+    public var reviewsAllowed: Bool?
+    public var averageRating: String?
+    public var ratingCount: Int?
+    public var relatedIds: String?
+    public var upsellIds: String?
+    public var crossSellIds: String?
+    public var parentId: Int?
+    public var categories: String?
+    public var tags: String?
+    public var images: String?
+    public var featuredSrc: String?
+    public var attributes: String?
+    public var defaultAttributes: String?
+    public var downloads: String?
+    public var downloadLimit: Int?
+    public var downloadExpiry: Int?
+    public var downloadType: String?
+    public var purchaseNote: String?
+    public var totalSales: Int?
+    public var variations: String?
+    public var parent: String?
+    public var productUrl: NSURL?
+    public var buttonText: String?
+    public var menuOrder: Int?
 
     public init?(_ map: Map) {}
 
