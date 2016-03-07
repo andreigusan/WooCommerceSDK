@@ -43,6 +43,9 @@ public struct Customer: Mappable {
 
     public static func getOrders(customerId: Int, completion: (success: Bool, orders: [Order]?) -> Void) {
         let client = Client.sharedClient
-        client.getArray(.Orders, slug: "customers/\(customerId)/orders", completion: completion)
+        let parameters = [
+            "filter[limit]": "10",
+        ]
+        client.getArray(.Orders, slug: "customers/\(customerId)/orders", parameters: parameters, completion: completion)
     }
 }

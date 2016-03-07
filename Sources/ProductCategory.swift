@@ -28,6 +28,10 @@ public struct ProductCategory: Mappable {
 
     public static func getAll(limit limit: Int = 10, completion: (success: Bool, categories: [ProductCategory]?) -> Void) {
         let client = Client.sharedClient
-        client.getArray(.ProductCategories, slug: "products/categories", limit: limit, completion: completion)
+        let parameters = [
+            "filter[limit]": String(limit),
+        ]
+
+        client.getArray(.ProductCategories, slug: "products/categories", parameters: parameters, completion: completion)
     }
 }
