@@ -143,7 +143,7 @@ public struct Product: Mappable {
         client.get("product", id: id, completion: completion)
     }
 
-    public static func getAll(byCategory category: ProductCategory, limit: Int = 10, completion: (success: Bool, orders: [Product]?) -> Void) {
+    public static func getAll(byCategory category: ProductCategory, limit: Int = 10, completion: (success: Bool, products: [Product]?) -> Void) {
         let client = Client.sharedClient
         guard let slug = category.slug else { return }
         client.getArray(.Products, slug: "products?filter[limit]=\(limit)?filter[category]=\(slug)", limit: limit, completion: completion)

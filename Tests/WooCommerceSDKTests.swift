@@ -74,8 +74,8 @@ class WooCommerceSDKTests: XCTestCase {
         let expectation: XCTestExpectation = self.expectationWithDescription("testGetAllProductByCategory")
         var category = ProductCategory()
         category.slug = "hoodies"
-        Product.getAll(byCategory: category) { (success, categories) -> Void in
-            XCTAssertNotNil(categories)
+        Product.getAll(byCategory: category) { (success, products) -> Void in
+            XCTAssertNotNil(products)
             expectation.fulfill()
         }
         self.waitForExpectationsWithTimeout(requestTimeout, handler: nil)
