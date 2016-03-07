@@ -19,12 +19,13 @@ public class Client {
         self.consumerSecret = consumerSecret
     }
 
-    public func getStatuses(completion: (success: Bool, value: Statuses?) -> Void) {
+    public func getStatuses(completion: ((success: Bool, value: Statuses?) -> Void)?) {
         let baseURL = NSURL(string: siteURL!)
         let requestURL = NSURL(string: "wc-api/v3/orders/statuses", relativeToURL: baseURL)
         let requestURLString = requestURL!.absoluteString
 
         guard let user = consumerKey, password = consumerSecret else {
+            guard let completion = completion else { return }
             completion(success: false, value: nil)
             return
         }
@@ -34,8 +35,10 @@ public class Client {
             .responseJSON { response in
                 if response.result.isSuccess {
                     self.statuses = Mapper<Statuses>().map(response.result.value!)
+                    guard let completion = completion else { return }
                     completion(success: true, value: self.statuses)
                 } else {
+                    guard let completion = completion else { return }
                     completion(success: false, value: nil)
                 }
         }
