@@ -80,4 +80,21 @@ class WooCommerceSDKTests: XCTestCase {
         }
         self.waitForExpectationsWithTimeout(requestTimeout, handler: nil)
     }
+
+    func testGetStatuses() {
+        let expectation: XCTestExpectation = self.expectationWithDescription("testGetStatuses")
+        let client = Client.sharedClient
+        client.getStatuses { success, value in
+            XCTAssertNotNil(client.statuses)
+            XCTAssertEqual(client.statuses?.getStatusName("cancelled"), "Cancelled")
+            XCTAssertEqual(client.statuses?.getStatusName("completed"), "Completed")
+            XCTAssertEqual(client.statuses?.getStatusName("failed"), "Failed")
+            XCTAssertEqual(client.statuses?.getStatusName("on-hold"), "On Hold")
+            XCTAssertEqual(client.statuses?.getStatusName("pending"), "Pending Payment")
+            XCTAssertEqual(client.statuses?.getStatusName("processing"), "Processing")
+            XCTAssertEqual(client.statuses?.getStatusName("refunded"), "Refunded")
+            expectation.fulfill()
+        }
+        self.waitForExpectationsWithTimeout(requestTimeout, handler: nil)
+    }
 }

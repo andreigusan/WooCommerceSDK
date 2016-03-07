@@ -9,12 +9,36 @@ public class Client {
     public var consumerSecret: String?
     public var siteURL: String?
 
+    public var statuses: Statuses?
+
     init() {}
 
     init(siteURL: String, consumerKey: String, consumerSecret: String) {
         self.siteURL = siteURL
         self.consumerKey = consumerKey
         self.consumerSecret = consumerSecret
+    }
+
+    public func getStatuses(completion: (success: Bool, value: Statuses?) -> Void) {
+        let baseURL = NSURL(string: siteURL!)
+        let requestURL = NSURL(string: "wc-api/v3/orders/statuses", relativeToURL: baseURL)
+        let requestURLString = requestURL!.absoluteString
+
+        guard let user = consumerKey, password = consumerSecret else {
+            completion(success: false, value: nil)
+            return
+        }
+
+        Alamofire.request(.GET, requestURLString)
+            .authenticate(user: user, password: password)
+            .responseJSON { response in
+                if response.result.isSuccess {
+                    self.statuses = Mapper<Statuses>().map(response.result.value!)
+                    completion(success: true, value: self.statuses)
+                } else {
+                    completion(success: false, value: nil)
+                }
+        }
     }
 
     public func get<T: Mappable>(type: String, id: Int, completion: (success: Bool, value: T?) -> Void) {
