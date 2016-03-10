@@ -72,7 +72,7 @@ Product.getAll(byCategory: category) { success, products
 ### [Carthage](https://github.com/Carthage/Carthage)
 Add this to your `Cartfile`:
 
-    github "thii/WooCommerceSDK"
+    github "thii/WooCommerceSDK" "master"
 
 then
 
