@@ -69,6 +69,10 @@
 		84A6D14C1C65CF040088319B /* LineItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498173D1C64E4F4000873AB /* LineItem.swift */; };
 		84A6D14D1C65CF040088319B /* PaymentDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498173B1C64E3EF000873AB /* PaymentDetails.swift */; };
 		84A6D14E1C65CF040088319B /* FloatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849817371C64DA5F000873AB /* FloatTransform.swift */; };
+		84D1A78D1C952BBD00D410F5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1A78C1C952BBD00D410F5 /* Image.swift */; };
+		84D1A78E1C952BBD00D410F5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1A78C1C952BBD00D410F5 /* Image.swift */; };
+		84D1A78F1C952BBD00D410F5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1A78C1C952BBD00D410F5 /* Image.swift */; };
+		84D1A7901C952BBD00D410F5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1A78C1C952BBD00D410F5 /* Image.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +155,7 @@
 		84A6D1031C65C8A40088319B /* WooCommerceSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WooCommerceSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A6D10C1C65C8A40088319B /* WooCommerceSDK-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WooCommerceSDK-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A6D11F1C65C8B30088319B /* WooCommerceSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WooCommerceSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84D1A78C1C952BBD00D410F5 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +254,7 @@
 				849817351C64CE5A000873AB /* Customer.swift */,
 				8498173D1C64E4F4000873AB /* LineItem.swift */,
 				8402B3371C64797E00E33381 /* Order.swift */,
+				84D1A78C1C952BBD00D410F5 /* Image.swift */,
 				849817331C64B8A9000873AB /* Product.swift */,
 				844A87F61C66237B00ABD780 /* ProductCategory.swift */,
 				8498173B1C64E3EF000873AB /* PaymentDetails.swift */,
@@ -467,8 +473,8 @@
 			buildConfigurationList = 84A6D0DC1C65C82B0088319B /* Build configuration list for PBXNativeTarget "WooCommerceSDK-iOS" */;
 			buildPhases = (
 				84A6D0C61C65C82A0088319B /* Sources */,
-				84A6D0C71C65C82A0088319B /* Frameworks */,
 				84A6D0C81C65C82A0088319B /* Headers */,
+				84A6D0C71C65C82A0088319B /* Frameworks */,
 				84A6D0C91C65C82A0088319B /* Resources */,
 			);
 			buildRules = (
@@ -701,6 +707,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84A6D1371C65CEE60088319B /* Client.swift in Sources */,
+				84D1A78D1C952BBD00D410F5 /* Image.swift in Sources */,
 				84A6D1381C65CEE60088319B /* Order.swift in Sources */,
 				84A6D1391C65CEE60088319B /* Product.swift in Sources */,
 				84A6D13A1C65CEE60088319B /* Customer.swift in Sources */,
@@ -727,6 +734,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84A6D12E1C65CEBE0088319B /* Client.swift in Sources */,
+				84D1A78E1C952BBD00D410F5 /* Image.swift in Sources */,
 				84A6D12F1C65CEBE0088319B /* Order.swift in Sources */,
 				84A6D1301C65CEBE0088319B /* Product.swift in Sources */,
 				84A6D1311C65CEBE0088319B /* Customer.swift in Sources */,
@@ -753,6 +761,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84A6D13F1C65CEEE0088319B /* Client.swift in Sources */,
+				84D1A78F1C952BBD00D410F5 /* Image.swift in Sources */,
 				84A6D1401C65CEEE0088319B /* Order.swift in Sources */,
 				84A6D1411C65CEEE0088319B /* Product.swift in Sources */,
 				84A6D1421C65CEEE0088319B /* Customer.swift in Sources */,
@@ -779,6 +788,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84A6D1471C65CF040088319B /* Client.swift in Sources */,
+				84D1A7901C952BBD00D410F5 /* Image.swift in Sources */,
 				84A6D1481C65CF040088319B /* Order.swift in Sources */,
 				84A6D1491C65CF040088319B /* Product.swift in Sources */,
 				84A6D14A1C65CF040088319B /* Customer.swift in Sources */,

@@ -52,7 +52,7 @@ public struct Product: Mappable {
     public var parentId: Int?
     public var categories: String?
     public var tags: String?
-    public var images: String?
+    public var images: [Image]?
     public var featuredSrc: String?
     public var attributes: String?
     public var defaultAttributes: String?
