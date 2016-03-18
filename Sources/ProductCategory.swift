@@ -8,7 +8,7 @@ public struct ProductCategory: Mappable {
     public var parent: Int?
     public var description: String?
     public var display: String?
-    public var image: NSURL?
+    public var imageURL: NSURL?
     public var count: Int?
 
     public init?(_ map: Map) {}
@@ -22,7 +22,7 @@ public struct ProductCategory: Mappable {
         parent <- map["parent"]
         description <- map["description"]
         display <- map["display"]
-        image <- map["image"]
+        imageURL <- (map["image"], URLTransform())
         count <- map["count"]
     }
 
