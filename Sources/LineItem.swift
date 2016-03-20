@@ -13,7 +13,7 @@ public struct LineItem: Mappable{
     public var name: String?
     public var productId: Int?
     public var sku: String?
-    public var meta: [String: String]?
+    public var meta: [ItemMeta]?
 
     public init?(_ map: Map) {}
 
