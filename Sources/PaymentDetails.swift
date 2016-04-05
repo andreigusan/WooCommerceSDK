@@ -6,6 +6,8 @@ public struct PaymentDetails: Mappable {
     public var methodTitle: String?
     public var paid: Bool?
 
+    public init() {}
+
     public init?(_ map: Map) {}
 
     mutating public func mapping(map: Map) {

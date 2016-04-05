@@ -87,4 +87,27 @@ public class Client {
                 }
         }
     }
+
+    public func post<T: Mappable>(type: String, parameters: [String : AnyObject], completion: (success: Bool, value: T?) -> Void) {
+        let baseURL = NSURL(string: siteURL!)
+        let requestURL = NSURL(string: "wc-api/v3/\(type)s", relativeToURL: baseURL)
+        let requestURLString = requestURL!.absoluteString
+
+        guard let user = consumerKey, password = consumerSecret else {
+            completion(success: false, value: nil)
+            return
+        }
+
+        Alamofire.request(.POST, requestURLString, parameters: parameters, encoding: .JSON)
+            .authenticate(user: user, password: password)
+            .responseJSON { response in
+                if response.result.isSuccess {
+                    let object = Mapper<T>().map(response.result.value![type])
+                    completion(success: true, value: object)
+                } else {
+                    completion(success: false, value: nil)
+                }
+        }
+    }
+    
 }

@@ -15,6 +15,8 @@ public struct LineItem: Mappable{
     public var sku: String?
     public var meta: [ItemMeta]?
 
+    public init() {}
+
     public init?(_ map: Map) {}
 
     mutating public func mapping(map: Map) {

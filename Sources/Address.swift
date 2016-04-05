@@ -14,6 +14,8 @@ public struct Address: Mappable {
     public var email: String?
     public var phone: String?
 
+    public init() {}
+
     public init?(_ map: Map) {}
 
     mutating public func mapping(map: Map) {

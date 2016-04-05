@@ -33,6 +33,8 @@ public struct Order: Mappable {
     public var couponLines: String?
     public var customer: Customer?
 
+    public init() {}
+
     public init?(_ map: Map) {}
 
     mutating public func mapping(map: Map) {
@@ -72,5 +74,13 @@ public struct Order: Mappable {
     public static func get(id: Int, completion: (success: Bool, order: Order?) -> Void) {
         let client = Client.sharedClient
         client.get("order", id: id, completion: completion)
+    }
+
+    public static func create(order: Order, completion: (success: Bool, order: Order?) -> Void) {
+        let client = Client.sharedClient
+        let parameters = [
+            "order": order.toJSON()
+        ]
+        client.post("order", parameters: parameters, completion: completion)
     }
 }
