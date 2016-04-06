@@ -49,6 +49,21 @@ class WooCommerceSDKTests: XCTestCase {
 		self.waitForExpectationsWithTimeout(requestTimeout, handler: nil)
 	}
 
+    func testCreateEmptyOrder() {
+        let expectation: XCTestExpectation = self.expectationWithDescription("testCreateEmptyOrder")
+        let order = Order()
+
+        Order.create(order) { success, newOrder in
+            if success == true {
+                XCTAssertNotNil(newOrder, "Order object should not be nil.")
+                XCTAssert(newOrder!.status == "pending", "Order status should be Pending Payment.")
+            }
+            expectation.fulfill()
+        }
+
+        self.waitForExpectationsWithTimeout(requestTimeout, handler: nil)
+    }
+
     func testCreateOrder() {
         let expectation: XCTestExpectation = self.expectationWithDescription("testCreateOrder")
 
