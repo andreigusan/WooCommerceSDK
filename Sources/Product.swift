@@ -143,13 +143,14 @@ public struct Product: Mappable {
         client.get("product", id: id, completion: completion)
     }
 
-    public static func getAll(byCategory category: ProductCategory, limit: Int = 10, completion: (success: Bool, products: [Product]?) -> Void) {
+    public static func getAll(byCategory category: ProductCategory? = nil, limit: Int = 10, completion: (success: Bool, products: [Product]?) -> Void) {
         let client = Client.sharedClient
-        guard let slug = category.slug else { return }
-        let parameters = [
+        var parameters = [
             "filter[limit]": String(limit),
-            "filter[category]": slug,
-        ]
+            ]
+        if let category = category {
+            parameters["filter[category]"] = category.slug
+        }
         client.getArray(.Products, slug: "products", parameters: parameters, completion: completion)
     }
 }
