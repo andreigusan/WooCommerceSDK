@@ -84,6 +84,16 @@ public struct Order: Mappable {
         client.post("order", parameters: parameters, completion: completion)
     }
 
+    public static func update(id: Int, payment: PaymentDetails, completion: (success: Bool, order: Order?) -> Void) {
+        let client = Client.sharedClient
+        let parameters = [
+            "order": [
+                "payment_details": payment.toJSON()
+            ]
+        ]
+        client.post("order", parameters: parameters, completion: completion)
+    }
+
     public static func delete(id: Int, force: Bool = false, completion: (success: Bool) -> Void) {
         let client = Client.sharedClient
         let parameters = [
