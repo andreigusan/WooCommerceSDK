@@ -119,20 +119,21 @@ class WooCommerceSDKTests: XCTestCase {
 //        self.waitForExpectationsWithTimeout(requestTimeout, handler: nil)
 //    }
 
-	func testGetProduct() {
 //    func testUpdateOrder() {
 //        let expectation: XCTestExpectation = self.expectationWithDescription("testUpdateOrder")
 //        var payment = PaymentDetails()
 //        payment.methodId = "paypal"
 //        payment.methodTitle = "PayPal"
 //        payment.paid = true
-//        Order.update(35, payment: payment) { success, order in
+//        payment.transactionId = "ABCDEFGHIJKLMNOP"
+//        Order.update(34, payment: payment) { success, order in
 //            XCTAssert(order!.paymentDetails!.paid!, "Order should have been paid.")
 //            expectation.fulfill()
 //        }
 //        self.waitForExpectationsWithTimeout(requestTimeout, handler: nil)
 //    }
-    
+
+	func testGetProduct() {
 		let expectation: XCTestExpectation = self.expectationWithDescription("testGetProduct")
 		Product.get(8) { success, product in
 			if success == true {

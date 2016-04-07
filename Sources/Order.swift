@@ -91,7 +91,7 @@ public struct Order: Mappable {
                 "payment_details": payment.toJSON()
             ]
         ]
-        client.post("order", parameters: parameters, completion: completion)
+        client.put("order", id: id, parameters: parameters, completion: completion)
     }
 
     public static func delete(id: Int, force: Bool = false, completion: (success: Bool) -> Void) {
