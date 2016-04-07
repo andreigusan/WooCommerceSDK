@@ -136,7 +136,7 @@ class WooCommerceSDKTests: XCTestCase {
     }
 
     func testGetAllProducts() {
-        let expectation: XCTestExpectation = self.expectationWithDescription("testGetAllProductByCategory")
+        let expectation: XCTestExpectation = self.expectationWithDescription("testGetAllProducts")
         var category = ProductCategory()
         category.slug = "hoodies"
         Product.getAll(limit: 1000) { (success, products) -> Void in
