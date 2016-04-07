@@ -71,12 +71,12 @@ public struct Order: Mappable {
         customer <- map["customer"]
     }
 
-    public static func get(id: Int, completion: (success: Bool, order: Order?) -> Void) {
+    public static func get(id: Int, completion: ((success: Bool, order: Order?) -> Void)?) {
         let client = Client.sharedClient
         client.get("order", id: id, completion: completion)
     }
 
-    public static func create(order: Order, completion: (success: Bool, order: Order?) -> Void) {
+    public static func create(order: Order, completion: ((success: Bool, order: Order?) -> Void)?) {
         let client = Client.sharedClient
         let parameters = [
             "order": order.toJSON()
@@ -84,7 +84,7 @@ public struct Order: Mappable {
         client.post("order", parameters: parameters, completion: completion)
     }
 
-    public static func update(id: Int, payment: PaymentDetails, completion: (success: Bool, order: Order?) -> Void) {
+    public static func update(id: Int, payment: PaymentDetails, completion: ((success: Bool, order: Order?) -> Void)?) {
         let client = Client.sharedClient
         let parameters = [
             "order": [
@@ -94,7 +94,7 @@ public struct Order: Mappable {
         client.put("order", id: id, parameters: parameters, completion: completion)
     }
 
-    public static func delete(id: Int, force: Bool = false, completion: (success: Bool) -> Void) {
+    public static func delete(id: Int, force: Bool = false, completion: ((success: Bool) -> Void)?) {
         let client = Client.sharedClient
         let parameters = [
             "force": (force ? "true" : "false")

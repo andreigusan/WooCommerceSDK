@@ -138,12 +138,12 @@ public struct Product: Mappable {
         menuOrder <- map["menu_order"]
     }
 
-    public static func get(id: Int, completion: (success: Bool, product: Product?) -> Void) {
+    public static func get(id: Int, completion: ((success: Bool, product: Product?) -> Void)?) {
         let client = Client.sharedClient
         client.get("product", id: id, completion: completion)
     }
 
-    public static func getAll(byCategory category: ProductCategory? = nil, limit: Int = 10, completion: (success: Bool, products: [Product]?) -> Void) {
+    public static func getAll(byCategory category: ProductCategory? = nil, limit: Int = 10, completion: ((success: Bool, products: [Product]?) -> Void)?) {
         let client = Client.sharedClient
         var parameters = [
             "filter[limit]": String(limit),

@@ -26,7 +26,7 @@ public struct ProductCategory: Mappable {
         count <- map["count"]
     }
 
-    public static func getAll(limit limit: Int = 10, completion: (success: Bool, categories: [ProductCategory]?) -> Void) {
+    public static func getAll(limit limit: Int = 10, completion: ((success: Bool, categories: [ProductCategory]?) -> Void)?) {
         let client = Client.sharedClient
         let parameters = [
             "filter[limit]": String(limit),

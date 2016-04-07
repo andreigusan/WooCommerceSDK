@@ -36,12 +36,12 @@ public struct Customer: Mappable {
         shippingAddress <- map["shipping_address"]
     }
 
-    public static func get(id: Int, completion: (success: Bool, customer: Customer?) -> Void) {
+    public static func get(id: Int, completion: ((success: Bool, customer: Customer?) -> Void)?) {
         let client = Client.sharedClient
         client.get("customer", id: id, completion: completion)
     }
 
-    public static func getOrders(customerId: Int, completion: (success: Bool, orders: [Order]?) -> Void) {
+    public static func getOrders(customerId: Int, completion: ((success: Bool, orders: [Order]?) -> Void)?) {
         let client = Client.sharedClient
         let parameters = [
             "filter[limit]": "10",
