@@ -103,6 +103,22 @@ class WooCommerceSDKTests: XCTestCase {
 //        self.waitForExpectationsWithTimeout(requestTimeout, handler: nil)
 //    }
 
+//    func testDeleteOrder() {
+//        let expectation: XCTestExpectation = self.expectationWithDescription("testDeleteOrder")
+//        Order.delete(38) { success in
+//            expectation.fulfill()
+//        }
+//        self.waitForExpectationsWithTimeout(requestTimeout, handler: nil)
+//    }
+
+//    func testForceDeleteOrder() {
+//        let expectation: XCTestExpectation = self.expectationWithDescription("testDeleteOrder")
+//        Order.delete(36, force: true) { success in
+//            expectation.fulfill()
+//        }
+//        self.waitForExpectationsWithTimeout(requestTimeout, handler: nil)
+//    }
+
 	func testGetProduct() {
 		let expectation: XCTestExpectation = self.expectationWithDescription("testGetProduct")
 		Product.get(8) { success, product in

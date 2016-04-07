@@ -110,4 +110,25 @@ public class Client {
         }
     }
     
+    public func delete(type: String, id: Int, parameters: [String : AnyObject]?, completion: (success: Bool) -> Void) {
+        let baseURL = NSURL(string: siteURL!)
+        let requestURL = NSURL(string: "wc-api/v3/\(type)s/\(id)", relativeToURL: baseURL)
+        let requestURLString = requestURL!.absoluteString
+
+        guard let user = consumerKey, password = consumerSecret else {
+            completion(success: false)
+            return
+        }
+
+        Alamofire.request(.DELETE, requestURLString, parameters: parameters)
+            .authenticate(user: user, password: password)
+            .responseJSON { response in
+                if response.result.isSuccess && response.response?.statusCode == 200 {
+                    completion(success: true)
+                } else {
+                    completion(success: false)
+                }
+        }
+    }
+    
 }

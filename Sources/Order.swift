@@ -83,4 +83,12 @@ public struct Order: Mappable {
         ]
         client.post("order", parameters: parameters, completion: completion)
     }
+
+    public static func delete(id: Int, force: Bool = false, completion: (success: Bool) -> Void) {
+        let client = Client.sharedClient
+        let parameters = [
+            "force": (force ? "true" : "false")
+        ]
+        client.delete("order", id: id, parameters: parameters, completion: completion)
+    }
 }
