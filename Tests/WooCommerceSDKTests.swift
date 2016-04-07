@@ -49,60 +49,60 @@ class WooCommerceSDKTests: XCTestCase {
 		self.waitForExpectationsWithTimeout(requestTimeout, handler: nil)
 	}
 
-    func testCreateEmptyOrder() {
-        let expectation: XCTestExpectation = self.expectationWithDescription("testCreateEmptyOrder")
-        let order = Order()
+//    func testCreateEmptyOrder() {
+//        let expectation: XCTestExpectation = self.expectationWithDescription("testCreateEmptyOrder")
+//        let order = Order()
+//
+//        Order.create(order) { success, newOrder in
+//            if success == true {
+//                XCTAssertNotNil(newOrder, "Order object should not be nil.")
+//                XCTAssert(newOrder!.status == "pending", "Order status should be Pending Payment.")
+//            }
+//            expectation.fulfill()
+//        }
+//
+//        self.waitForExpectationsWithTimeout(requestTimeout, handler: nil)
+//    }
+//
+//    func testCreateOrder() {
+//        let expectation: XCTestExpectation = self.expectationWithDescription("testCreateOrder")
+//
+//        var order = Order()
+//        var paymentDetails = PaymentDetails()
+//        var billingAddress = Address()
+//        var lineItem = LineItem()
+//
+//        paymentDetails.methodId = "paypal"
+//        paymentDetails.methodTitle = "PayPal"
+//        paymentDetails.paid = true
+//
+//        billingAddress.firstName = "John"
+//        billingAddress.lastName = "Doe"
+//        billingAddress.address1 = "969 Market"
+//        billingAddress.city = "San Francisco"
+//        billingAddress.state = "CA"
+//        billingAddress.postcode = "94103"
+//        billingAddress.country = "US"
+//        billingAddress.email = "john.doe@example.com"
+//        billingAddress.phone = "(555) 555-5555"
+//
+//        lineItem.productId = 8
+//        lineItem.quantity = 1
+//
+//        order.paymentDetails = paymentDetails
+//        order.billingAddress = billingAddress
+//        order.customerId = 2
+//        order.lineItems = [lineItem]
+//
+//        Order.create(order) { success, newOrder in
+//            if success == true {
+//                XCTAssertNotNil(newOrder, "Order object should not be nil.")
+//            }
+//            expectation.fulfill()
+//        }
+//        self.waitForExpectationsWithTimeout(requestTimeout, handler: nil)
+//    }
 
-        Order.create(order) { success, newOrder in
-            if success == true {
-                XCTAssertNotNil(newOrder, "Order object should not be nil.")
-                XCTAssert(newOrder!.status == "pending", "Order status should be Pending Payment.")
-            }
-            expectation.fulfill()
-        }
-
-        self.waitForExpectationsWithTimeout(requestTimeout, handler: nil)
-    }
-
-    func testCreateOrder() {
-        let expectation: XCTestExpectation = self.expectationWithDescription("testCreateOrder")
-
-        var order = Order()
-        var paymentDetails = PaymentDetails()
-        var billingAddress = Address()
-        var lineItem = LineItem()
-
-        paymentDetails.methodId = "paypal"
-        paymentDetails.methodTitle = "PayPal"
-        paymentDetails.paid = true
-
-        billingAddress.firstName = "John"
-        billingAddress.lastName = "Doe"
-        billingAddress.address1 = "969 Market"
-        billingAddress.city = "San Francisco"
-        billingAddress.state = "CA"
-        billingAddress.postcode = "94103"
-        billingAddress.country = "US"
-        billingAddress.email = "john.doe@example.com"
-        billingAddress.phone = "(555) 555-5555"
-
-        lineItem.productId = 8
-        lineItem.quantity = 1
-
-        order.paymentDetails = paymentDetails
-        order.billingAddress = billingAddress
-        order.customerId = 2
-        order.lineItems = [lineItem]
-
-        Order.create(order) { success, newOrder in
-            if success == true {
-                XCTAssertNotNil(newOrder, "Order object should not be nil.")
-            }
-            expectation.fulfill()
-        }
-        self.waitForExpectationsWithTimeout(requestTimeout, handler: nil)
-    }
-    
 	func testGetProduct() {
 		let expectation: XCTestExpectation = self.expectationWithDescription("testGetProduct")
 		Product.get(8) { success, product in
