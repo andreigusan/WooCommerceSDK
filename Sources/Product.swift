@@ -50,7 +50,7 @@ public struct Product: Mappable {
     public var upsellIds: String?
     public var crossSellIds: String?
     public var parentId: Int?
-    public var categories: String?
+    public var categories: [String]?
     public var tags: String?
     public var images: [Image]?
     public var featuredSrc: String?
