@@ -3,11 +3,11 @@ import ObjectMapper
 
 public struct LineItem: Mappable{
     public var id: Int?
-    public var subtotal: Float?
-    public var subtotalTax: Float?
-    public var total: Float?
-    public var totalTax: Float?
-    public var price: Float?
+    public var subtotal: Double?
+    public var subtotalTax: Double?
+    public var total: Double?
+    public var totalTax: Double?
+    public var price: Double?
     public var quantity: Int?
     public var taxClass: String?
     public var name: String?
@@ -21,11 +21,11 @@ public struct LineItem: Mappable{
 
     mutating public func mapping(map: Map) {
         id <- map["id"]
-        subtotal <- (map["subtotal"], FloatTransform())
-        subtotalTax <- (map["subtotal_tax"], FloatTransform())
-        total <- (map["total"], FloatTransform())
-        totalTax <- (map["total_tax"], FloatTransform())
-        price <- (map["price"], FloatTransform())
+        subtotal <- map["subtotal"]
+        subtotalTax <- map["subtotal_tax"]
+        total <- map["total"]
+        totalTax <- map["total_tax"]
+        price <- map["price"]
         quantity <- map["quantity"]
         taxClass <- map["tax_class"]
         name <- map["name"]

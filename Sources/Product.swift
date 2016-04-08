@@ -12,9 +12,9 @@ public struct Product: Mappable {
     public var virtual: Bool?
     public var permalink: NSURL?
     public var sku: String?
-    public var price: Float?
-    public var regularPrice: Float?
-    public var salePrice: Float?
+    public var price: Double?
+    public var regularPrice: Double?
+    public var salePrice: Double?
     public var salePriceDatesFrom: NSDate?
     public var salePriceDatesTo: NSDate?
     public var priceHtml: String?
@@ -81,9 +81,9 @@ public struct Product: Mappable {
         virtual <- map["virtual"]
         permalink <- (map["permalink"], URLTransform())
         sku <- map["sku"]
-        price <- (map["price"], FloatTransform())
-        regularPrice <- (map["regular_price"], FloatTransform())
-        salePrice <- (map["sale_price"], FloatTransform())
+        price <- map["price"]
+        regularPrice <- map["regular_price"]
+        salePrice <- map["sale_price"]
         salePriceDatesFrom <- map["sale_price_dates_from"]
         salePriceDatesTo <- map["sale_price_dates_to"]
         priceHtml <- map["price_html"]
