@@ -8,11 +8,11 @@ public class DoubleTransform: TransformType {
     public init() {}
 
     public func transformFromJSON(value: AnyObject?) -> Double? {
-        if let value = value as? String {
-            return Double(value)
+        if let string = value as? String {
+            return Double(string)
         }
-        if let value = value as? Double {
-            return value
+        if let double = value as? Double {
+            return double
         }
         return nil
     }
