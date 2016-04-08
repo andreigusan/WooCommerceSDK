@@ -21,11 +21,11 @@ public struct LineItem: Mappable{
 
     mutating public func mapping(map: Map) {
         id <- map["id"]
-        subtotal <- map["subtotal"]
-        subtotalTax <- map["subtotal_tax"]
-        total <- map["total"]
-        totalTax <- map["total_tax"]
-        price <- map["price"]
+        subtotal <- (map["subtotal"], DoubleTransform())
+        subtotalTax <- (map["subtotal_tax"], DoubleTransform())
+        total <- (map["total"], DoubleTransform())
+        totalTax <- (map["total_tax"], DoubleTransform())
+        price <- (map["price"], DoubleTransform())
         quantity <- map["quantity"]
         taxClass <- map["tax_class"]
         name <- map["name"]

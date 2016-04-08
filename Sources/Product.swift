@@ -81,9 +81,9 @@ public struct Product: Mappable {
         virtual <- map["virtual"]
         permalink <- (map["permalink"], URLTransform())
         sku <- map["sku"]
-        price <- map["price"]
-        regularPrice <- map["regular_price"]
-        salePrice <- map["sale_price"]
+        price <- (map["price"], DoubleTransform())
+        regularPrice <- (map["regular_price"], DoubleTransform())
+        salePrice <- (map["sale_price"], DoubleTransform())
         salePriceDatesFrom <- map["sale_price_dates_from"]
         salePriceDatesTo <- map["sale_price_dates_to"]
         priceHtml <- map["price_html"]

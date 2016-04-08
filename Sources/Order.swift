@@ -45,14 +45,14 @@ public struct Order: Mappable {
         completedAt <- (map["completed_at"], ISO8601DateTransform())
         status <- map["status"]
         currency <- map["currency"]
-        total <- map["total"]
-        subtotal <- map["subtotal"]
+        total <- (map["total"], DoubleTransform())
+        subtotal <- (map["subtotal"], DoubleTransform())
         totalLineItemQuantity <- map["total_line_items_quantity"]
-        totalTax <- map["total_tax"]
-        totalShipping <- map["total_shipping"]
-        cartTax <- map["cart_tax"]
-        shippingTax <- map["shipping_tax"]
-        totalDiscount <- map["total_discount"]
+        totalTax <- (map["total_tax"], DoubleTransform())
+        totalShipping <- (map["total_shipping"], DoubleTransform())
+        cartTax <- (map["cart_tax"], DoubleTransform())
+        shippingTax <- (map["shipping_tax"], DoubleTransform())
+        totalDiscount <- (map["total_discount"], DoubleTransform())
         shippingMethods <- map["shipping_methods"]
         paymentDetails <- map["payment_details"]
         billingAddress <- map["billing_address"]
