@@ -3,6 +3,7 @@ import ObjectMapper
 
 public struct Order: Mappable {
     public var id: Int?
+    public var orderKey: String?
     public var orderNumber: Int?
     public var createdAt: NSDate?
     public var updatedAt: NSDate?
@@ -39,6 +40,7 @@ public struct Order: Mappable {
 
     mutating public func mapping(map: Map) {
         id <- map["id"]
+        orderKey <- map["order_key"]
         orderNumber <- map["order_number"]
         createdAt <- (map["created_at"], ISO8601DateTransform())
         updatedAt <- (map["updated_at"], ISO8601DateTransform())
