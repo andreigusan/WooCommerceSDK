@@ -3,11 +3,11 @@ import ObjectMapper
 
 public struct LineItem: Mappable{
     public var id: Int?
-    public var subtotal: Double?
-    public var subtotalTax: Double?
-    public var total: Double?
-    public var totalTax: Double?
-    public var price: Double?
+    public var subtotal: NSDecimalNumber?
+    public var subtotalTax: NSDecimalNumber?
+    public var total: NSDecimalNumber?
+    public var totalTax: NSDecimalNumber?
+    public var price: NSDecimalNumber?
     public var quantity: Int?
     public var taxClass: String?
     public var name: String?
@@ -21,11 +21,11 @@ public struct LineItem: Mappable{
 
     mutating public func mapping(map: Map) {
         id <- map["id"]
-        subtotal <- (map["subtotal"], DoubleTransform())
-        subtotalTax <- (map["subtotal_tax"], DoubleTransform())
-        total <- (map["total"], DoubleTransform())
-        totalTax <- (map["total_tax"], DoubleTransform())
-        price <- (map["price"], DoubleTransform())
+        subtotal <- (map["subtotal"], NSDecimalNumberTransform())
+        subtotalTax <- (map["subtotal_tax"], NSDecimalNumberTransform())
+        total <- (map["total"], NSDecimalNumberTransform())
+        totalTax <- (map["total_tax"], NSDecimalNumberTransform())
+        price <- (map["price"], NSDecimalNumberTransform())
         quantity <- map["quantity"]
         taxClass <- map["tax_class"]
         name <- map["name"]

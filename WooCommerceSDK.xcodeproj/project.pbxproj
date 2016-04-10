@@ -15,10 +15,10 @@
 		841F98241C9F0D5400379DE3 /* ItemMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841F98221C9F0D5400379DE3 /* ItemMeta.swift */; };
 		841F98251C9F0D5400379DE3 /* ItemMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841F98221C9F0D5400379DE3 /* ItemMeta.swift */; };
 		841F98261C9F0D5400379DE3 /* ItemMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841F98221C9F0D5400379DE3 /* ItemMeta.swift */; };
-		842FA10E1CB81F0B00E697C1 /* DoubleTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842FA10D1CB81F0B00E697C1 /* DoubleTransform.swift */; };
-		842FA10F1CB81F0B00E697C1 /* DoubleTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842FA10D1CB81F0B00E697C1 /* DoubleTransform.swift */; };
-		842FA1101CB81F0B00E697C1 /* DoubleTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842FA10D1CB81F0B00E697C1 /* DoubleTransform.swift */; };
-		842FA1111CB81F0B00E697C1 /* DoubleTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842FA10D1CB81F0B00E697C1 /* DoubleTransform.swift */; };
+		842FA10E1CB81F0B00E697C1 /* NSDecimalNumberTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842FA10D1CB81F0B00E697C1 /* NSDecimalNumberTransform.swift */; };
+		842FA10F1CB81F0B00E697C1 /* NSDecimalNumberTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842FA10D1CB81F0B00E697C1 /* NSDecimalNumberTransform.swift */; };
+		842FA1101CB81F0B00E697C1 /* NSDecimalNumberTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842FA10D1CB81F0B00E697C1 /* NSDecimalNumberTransform.swift */; };
+		842FA1111CB81F0B00E697C1 /* NSDecimalNumberTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842FA10D1CB81F0B00E697C1 /* NSDecimalNumberTransform.swift */; };
 		844A87F71C66237B00ABD780 /* ProductCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844A87F61C66237B00ABD780 /* ProductCategory.swift */; };
 		844A87F81C66272B00ABD780 /* ProductCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844A87F61C66237B00ABD780 /* ProductCategory.swift */; };
 		844A87F91C66272C00ABD780 /* ProductCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844A87F61C66237B00ABD780 /* ProductCategory.swift */; };
@@ -73,6 +73,9 @@
 		84A6D14B1C65CF040088319B /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849817391C64E21F000873AB /* Address.swift */; };
 		84A6D14C1C65CF040088319B /* LineItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498173D1C64E4F4000873AB /* LineItem.swift */; };
 		84A6D14D1C65CF040088319B /* PaymentDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8498173B1C64E3EF000873AB /* PaymentDetails.swift */; };
+		84A9762F1CB9F5AB005106BF /* NSDecimalNumberTransformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A9762E1CB9F5AB005106BF /* NSDecimalNumberTransformTests.swift */; };
+		84A976301CB9F5AB005106BF /* NSDecimalNumberTransformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A9762E1CB9F5AB005106BF /* NSDecimalNumberTransformTests.swift */; };
+		84A976311CB9F5AB005106BF /* NSDecimalNumberTransformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A9762E1CB9F5AB005106BF /* NSDecimalNumberTransformTests.swift */; };
 		84D1A78D1C952BBD00D410F5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1A78C1C952BBD00D410F5 /* Image.swift */; };
 		84D1A78E1C952BBD00D410F5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1A78C1C952BBD00D410F5 /* Image.swift */; };
 		84D1A78F1C952BBD00D410F5 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1A78C1C952BBD00D410F5 /* Image.swift */; };
@@ -112,7 +115,7 @@
 		8402B3371C64797E00E33381 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		8402B3391C6481AD00E33381 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		841F98221C9F0D5400379DE3 /* ItemMeta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemMeta.swift; sourceTree = "<group>"; };
-		842FA10D1CB81F0B00E697C1 /* DoubleTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoubleTransform.swift; path = Transforms/DoubleTransform.swift; sourceTree = "<group>"; };
+		842FA10D1CB81F0B00E697C1 /* NSDecimalNumberTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSDecimalNumberTransform.swift; path = Transforms/NSDecimalNumberTransform.swift; sourceTree = "<group>"; };
 		844A87F61C66237B00ABD780 /* ProductCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCategory.swift; sourceTree = "<group>"; };
 		848127561C6D10B000E65F82 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		848127571C6D10B000E65F82 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
@@ -160,6 +163,7 @@
 		84A6D1031C65C8A40088319B /* WooCommerceSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WooCommerceSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A6D10C1C65C8A40088319B /* WooCommerceSDK-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WooCommerceSDK-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A6D11F1C65C8B30088319B /* WooCommerceSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WooCommerceSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A9762E1CB9F5AB005106BF /* NSDecimalNumberTransformTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDecimalNumberTransformTests.swift; sourceTree = "<group>"; };
 		84D1A78C1C952BBD00D410F5 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -276,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				8402B32D1C64784900E33381 /* Info.plist */,
+				84A9762E1CB9F5AB005106BF /* NSDecimalNumberTransformTests.swift */,
 				8402B32B1C64784900E33381 /* WooCommerceSDKTests.swift */,
 			);
 			path = Tests;
@@ -284,7 +289,7 @@
 		842FA10C1CB81ED700E697C1 /* Transforms */ = {
 			isa = PBXGroup;
 			children = (
-				842FA10D1CB81F0B00E697C1 /* DoubleTransform.swift */,
+				842FA10D1CB81F0B00E697C1 /* NSDecimalNumberTransform.swift */,
 			);
 			name = Transforms;
 			sourceTree = "<group>";
@@ -715,7 +720,7 @@
 				84A6D1371C65CEE60088319B /* Client.swift in Sources */,
 				84D1A78D1C952BBD00D410F5 /* Image.swift in Sources */,
 				84A6D1381C65CEE60088319B /* Order.swift in Sources */,
-				842FA10E1CB81F0B00E697C1 /* DoubleTransform.swift in Sources */,
+				842FA10E1CB81F0B00E697C1 /* NSDecimalNumberTransform.swift in Sources */,
 				841F98231C9F0D5400379DE3 /* ItemMeta.swift in Sources */,
 				84A6D1391C65CEE60088319B /* Product.swift in Sources */,
 				84A6D13A1C65CEE60088319B /* Customer.swift in Sources */,
@@ -732,6 +737,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A9762F1CB9F5AB005106BF /* NSDecimalNumberTransformTests.swift in Sources */,
 				84A6D12D1C65CE9C0088319B /* WooCommerceSDKTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -743,7 +749,7 @@
 				84A6D12E1C65CEBE0088319B /* Client.swift in Sources */,
 				84D1A78E1C952BBD00D410F5 /* Image.swift in Sources */,
 				84A6D12F1C65CEBE0088319B /* Order.swift in Sources */,
-				842FA10F1CB81F0B00E697C1 /* DoubleTransform.swift in Sources */,
+				842FA10F1CB81F0B00E697C1 /* NSDecimalNumberTransform.swift in Sources */,
 				841F98241C9F0D5400379DE3 /* ItemMeta.swift in Sources */,
 				84A6D1301C65CEBE0088319B /* Product.swift in Sources */,
 				84A6D1311C65CEBE0088319B /* Customer.swift in Sources */,
@@ -760,6 +766,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A976301CB9F5AB005106BF /* NSDecimalNumberTransformTests.swift in Sources */,
 				84A6D12C1C65CE390088319B /* WooCommerceSDKTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -771,7 +778,7 @@
 				84A6D13F1C65CEEE0088319B /* Client.swift in Sources */,
 				84D1A78F1C952BBD00D410F5 /* Image.swift in Sources */,
 				84A6D1401C65CEEE0088319B /* Order.swift in Sources */,
-				842FA1101CB81F0B00E697C1 /* DoubleTransform.swift in Sources */,
+				842FA1101CB81F0B00E697C1 /* NSDecimalNumberTransform.swift in Sources */,
 				841F98251C9F0D5400379DE3 /* ItemMeta.swift in Sources */,
 				84A6D1411C65CEEE0088319B /* Product.swift in Sources */,
 				84A6D1421C65CEEE0088319B /* Customer.swift in Sources */,
@@ -788,6 +795,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A976311CB9F5AB005106BF /* NSDecimalNumberTransformTests.swift in Sources */,
 				84A6D1361C65CED90088319B /* WooCommerceSDKTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -799,7 +807,7 @@
 				84A6D1471C65CF040088319B /* Client.swift in Sources */,
 				84D1A7901C952BBD00D410F5 /* Image.swift in Sources */,
 				84A6D1481C65CF040088319B /* Order.swift in Sources */,
-				842FA1111CB81F0B00E697C1 /* DoubleTransform.swift in Sources */,
+				842FA1111CB81F0B00E697C1 /* NSDecimalNumberTransform.swift in Sources */,
 				841F98261C9F0D5400379DE3 /* ItemMeta.swift in Sources */,
 				84A6D1491C65CF040088319B /* Product.swift in Sources */,
 				84A6D14A1C65CF040088319B /* Customer.swift in Sources */,

@@ -9,14 +9,14 @@ public struct Order: Mappable {
     public var completedAt: NSDate?
     public var status: String?
     public var currency: String?
-    public var total: Double?
-    public var subtotal: Double?
+    public var total: NSDecimalNumber?
+    public var subtotal: NSDecimalNumber?
     public var totalLineItemQuantity: Int?
-    public var totalTax: Double?
-    public var totalShipping: Double?
-    public var cartTax: Double?
-    public var shippingTax: Double?
-    public var totalDiscount: Double?
+    public var totalTax: NSDecimalNumber?
+    public var totalShipping: NSDecimalNumber?
+    public var cartTax: NSDecimalNumber?
+    public var shippingTax: NSDecimalNumber?
+    public var totalDiscount: NSDecimalNumber?
     public var shippingMethods: String?
     public var paymentDetails: PaymentDetails?
     public var billingAddress: Address?
@@ -45,14 +45,14 @@ public struct Order: Mappable {
         completedAt <- (map["completed_at"], ISO8601DateTransform())
         status <- map["status"]
         currency <- map["currency"]
-        total <- (map["total"], DoubleTransform())
-        subtotal <- (map["subtotal"], DoubleTransform())
+        total <- (map["total"], NSDecimalNumberTransform())
+        subtotal <- (map["subtotal"], NSDecimalNumberTransform())
         totalLineItemQuantity <- map["total_line_items_quantity"]
-        totalTax <- (map["total_tax"], DoubleTransform())
-        totalShipping <- (map["total_shipping"], DoubleTransform())
-        cartTax <- (map["cart_tax"], DoubleTransform())
-        shippingTax <- (map["shipping_tax"], DoubleTransform())
-        totalDiscount <- (map["total_discount"], DoubleTransform())
+        totalTax <- (map["total_tax"], NSDecimalNumberTransform())
+        totalShipping <- (map["total_shipping"], NSDecimalNumberTransform())
+        cartTax <- (map["cart_tax"], NSDecimalNumberTransform())
+        shippingTax <- (map["shipping_tax"], NSDecimalNumberTransform())
+        totalDiscount <- (map["total_discount"], NSDecimalNumberTransform())
         shippingMethods <- map["shipping_methods"]
         paymentDetails <- map["payment_details"]
         billingAddress <- map["billing_address"]
