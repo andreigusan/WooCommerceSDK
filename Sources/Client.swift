@@ -69,7 +69,7 @@ public class Client {
         }
     }
 
-    public func getArray<T: Mappable>(type: RequestType, slug: String, parameters: [String: String]?, completion: ((success: Bool, value: [T]?) -> Void)?) {
+    public func getArray<T: Mappable>(type: RequestType, slug: String, parameters: [String: AnyObject]?, completion: ((success: Bool, value: [T]?) -> Void)?) {
         guard let url = siteURL, user = consumerKey, password = consumerSecret else {
             guard let completion = completion else { return }
             completion(success: false, value: nil)

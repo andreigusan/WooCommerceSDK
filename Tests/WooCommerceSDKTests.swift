@@ -176,6 +176,18 @@ class WooCommerceSDKTests: XCTestCase {
         self.waitForExpectationsWithTimeout(requestTimeout, handler: nil)
     }
 
+    func testGetAllProductsWithParameters() {
+        let expectation: XCTestExpectation = self.expectationWithDescription("testGetAllProductsWithParameters")
+        let parameters = [
+            "aelia_cs_currency" : "EUR"
+        ]
+        Product.getAll(parameters: parameters, limit: 1000) { (success, products) -> Void in
+            XCTAssertNotNil(products)
+            expectation.fulfill()
+        }
+        self.waitForExpectationsWithTimeout(requestTimeout, handler: nil)
+    }
+
     func testGetStatuses() {
         let expectation: XCTestExpectation = self.expectationWithDescription("testGetStatuses")
         let client = Client.sharedClient
