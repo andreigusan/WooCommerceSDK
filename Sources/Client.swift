@@ -46,7 +46,10 @@ public class Client {
 
     public func get<T: Mappable>(type: String, id: Int? = nil, email: String? = nil, completion: ((success: Bool, value: T?) -> Void)?) {
         let baseURL = NSURL(string: siteURL!)
-        var requestURL = NSURL(string: "wc-api/v3/\(type)s/\(id)", relativeToURL: baseURL)
+        var requestURL: NSURL?
+        if let id = id {
+            requestURL = NSURL(string: "wc-api/v3/\(type)s/\(id)", relativeToURL: baseURL)
+        }
         if let email = email {
             requestURL = NSURL(string: "wc-api/v3/customers/email/\(email)", relativeToURL: baseURL)
         }
