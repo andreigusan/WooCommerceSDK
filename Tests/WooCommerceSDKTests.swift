@@ -28,6 +28,17 @@ class WooCommerceSDKTests: XCTestCase {
 		self.waitForExpectationsWithTimeout(requestTimeout, handler: nil)
 	}
 
+    func testGetCustomerByEmail() {
+        let expectation: XCTestExpectation = self.expectationWithDescription("testGetCustomerByEmail")
+        let email = "john@example.com"
+        Customer.get(email) { success, customer in
+            XCTAssertNotNil(customer, "Customer object should not be nil.")
+            XCTAssertEqual(customer?.email, email, "Returned customer id should be matched.")
+            expectation.fulfill()
+        }
+        self.waitForExpectationsWithTimeout(requestTimeout, handler: nil)
+    }
+
     func testGetCustomerOrders() {
         let expectation: XCTestExpectation = self.expectationWithDescription("testGetCustomerOrders")
         Customer.getOrders(2) { (success, orders) -> Void in

@@ -41,6 +41,11 @@ public struct Customer: Mappable {
         client.get("customer", id: id, completion: completion)
     }
 
+    public static func get(email: String, completion: ((success: Bool, customer: Customer?) -> Void)?) {
+        let client = Client.sharedClient
+        client.get("customer", email: email, completion: completion)
+    }
+
     public static func getOrders(customerId: Int, completion: ((success: Bool, orders: [Order]?) -> Void)?) {
         let client = Client.sharedClient
         let parameters = [
