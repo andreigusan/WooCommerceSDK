@@ -17,3 +17,16 @@ script:
   - xcodebuild -workspace WooCommerceSDK.xcworkspace -scheme WooCommerceSDK-tvOS -sdk appletvsimulator -destination "name=Apple TV 1080p" ONLY_ACTIVE_ARCH=NO | xcpretty -c
   - xcodebuild -workspace WooCommerceSDK.xcworkspace -scheme WooCommerceSDK-watchOS -sdk watchsimulator -destination "name=Apple Watch - 42mm" ONLY_ACTIVE_ARCH=NO | xcpretty -c
   - xcodebuild test -workspace WooCommerceSDK.xcworkspace -scheme WooCommerceSDK-OSX | xcpretty -c
+
+before_deploy:
+  - carthage build --no-skip-current
+  - carthage archive WooCommerceSDK
+
+deploy:
+  provider: releases
+  api_key:
+    secure: GKoY2RE49AmoG73sc19oeS2/hdDLFlLjHqYPe0ArIb/ovGqMkgSIzGB/iTG2kGtEm20rxTV1EeE8egNuYgtsPl50/wPazACmSvYvRYXizyblH6q1FZV3g4rkzQGI+YM3pgGqYVhF5CsdYyDducYuRFC1BgPnWHonluodvbCZtpIy3wA+I+L69+pxqaNSrj2kaKqXlP6wO6RFJfRgmjkl5ceTNpuVE0TW+NI22EgzSDkfyBfJt1crcB9puiWS2V2KcAVvgOXsLprFNN9J60N6NhzTAhcMq8g/pOUVzkxXIuGDYU4LvOQyRviuRD8AMsaXTACRR+PybTC4NleMDSRE50zrKMSB3Q+Es+2DbGusLOiZ8G2mAGBfjI2qhZ31sFyVnFqI7+QvQ1tByFNswwefyofvdMM9GETlx+fV85DspWDE1Wo4GwOVd8UWh+s4UM6+HZFYBek6Gd31aN/aXsXhqAEWO2QhheC5ycWI/qk6J9O0PMra8HolokcyGjnpDNvOOxcWXEHlaXIvDtfRSl5J34uEyzkYHWS/MNySdoLerDTE7A0Sgsfm0A6MZ6JCR3shyUqc/B9PrbTs6LE2HqhVu3tK7FWPCJqwhUsHo+fJuCmmFpDEYX9twesyl7ozjbvKCnEjfT6y8nfMm25CjLFnyOCRRcaIHSHi0DdZGWeyM9U=
+  file: WooCommerceSDK.framework.zip
+  skip_cleanup: true
+  on:
+    tags: true
