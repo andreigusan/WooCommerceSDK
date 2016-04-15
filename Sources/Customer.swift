@@ -17,6 +17,8 @@ public struct Customer: Mappable {
     public var billingAddress: Address?
     public var shippingAddress: Address?
 
+    public init() {}
+
     public init?(_ map: Map) {}
 
     mutating public func mapping(map: Map) {
@@ -34,6 +36,14 @@ public struct Customer: Mappable {
         avatarUrl <- (map["avatar_url"], URLTransform())
         billingAddress <- map["billing_address"]
         shippingAddress <- map["shipping_address"]
+    }
+
+    public static func create(customer: Customer, completion: ((success: Bool, order: Customer?) -> Void)?) {
+        let client = Client.sharedClient
+        let parameters = [
+            "customer": customer.toJSON()
+        ]
+        client.post("customer", parameters: parameters, completion: completion)
     }
 
     public static func get(id: Int, completion: ((success: Bool, customer: Customer?) -> Void)?) {

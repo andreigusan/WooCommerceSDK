@@ -16,7 +16,19 @@ class WooCommerceSDKTests: XCTestCase {
 		client.consumerSecret = processInfo.environment["WOOCOMMERCE_CONSUMER_SECRET"]
 	}
 
-	func testGetCustomer() {
+//    func testCreateCustomer() {
+//        let expectation: XCTestExpectation = self.expectationWithDescription("testCreateCustomer")
+//        var customer = Customer()
+//        customer.email = "john.doe@example.com"
+//        Customer.create(customer) { success, newCustomer in
+//            XCTAssertNotNil(newCustomer, "Customer object should not be nil.")
+//            XCTAssertEqual(newCustomer?.email, customer.email, "Returned customer email should be matched.")
+//            expectation.fulfill()
+//        }
+//        self.waitForExpectationsWithTimeout(requestTimeout, handler: nil)
+//    }
+
+    func testGetCustomer() {
 		let expectation: XCTestExpectation = self.expectationWithDescription("testGetCustomer")
 		Customer.get(2) { success, customer in
 			if success == true {
