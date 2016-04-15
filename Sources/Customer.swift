@@ -38,7 +38,7 @@ public struct Customer: Mappable {
         shippingAddress <- map["shipping_address"]
     }
 
-    public static func create(customer: Customer, completion: ((success: Bool, order: Customer?) -> Void)?) {
+    public static func create(customer: Customer, completion: ((success: Bool, customer: Customer?) -> Void)?) {
         let client = Client.sharedClient
         let parameters = [
             "customer": customer.toJSON()
